@@ -15,6 +15,11 @@ class FavoritesTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBOutlet weak var favoritesTableViewCell: UILabel!
-   
+    @IBOutlet weak var img: UIImageView!
+    
+    
+    @IBOutlet weak var eventlabel: UILabel!
+    @IBOutlet weak var timelabel: UILabel!
+    @IBOutlet weak var locationlabel: UILabel!
+    
 }
