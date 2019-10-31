@@ -17,11 +17,11 @@ class FavoritesViewController: UITableViewController {
           //var img: UIImage
       }
     
-    var favorites = [favorite(name: "Green Day", time: "7:00PM", location: "American Airlines Arena"),
-                     favorite(name: "Fall Out Boy", time: "8:00PM", location: "American Airlines Arena"),
-                     favorite(name: "Panic! At The Disco", time: "9:00PM", location: "BB&T Center"),
-                     favorite(name: "Jeff Dunham", time: "7:30PM", location: "American Airlines Arena"),
-                     favorite(name: "granson", time: "7:00PM", location: "BB&T Center")]
+    var favorites = [favorite(name: "Green Day", time: "Oct. 31, 2019 - 7:00PM", location: "American Airlines Arena"),
+                     favorite(name: "Fall Out Boy", time: "Dec. 12, 2019 - 8:00PM", location: "American Airlines Arena"),
+                     favorite(name: "Panic! At The Disco", time: "Jan. 21, 2020 - 9:00PM", location: "BB&T Center"),
+                     favorite(name: "Jeff Dunham", time: " Jan. 24, 2020 - 7:30PM", location: "American Airlines Arena"),
+                     favorite(name: "granson", time: "Mar. 20, 2020 - 7:00PM", location: "BB&T Center")]
     
     
     struct CellIdentifier {
@@ -58,5 +58,27 @@ extension FavoritesViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let favorite = dataSource?.delete(at: indexPath) else {
+        return nil
+      }
+          let title = delete
+            NSLocalizedString("Delete", comment: "Delete")
+
+          let action = UIContextualAction(style: .normal, title: title,
+            handler: { (action, view, completionHandler) in
+            self.dataSource?.setDelete(!delete, at: indexPath)
+            completionHandler(true)
+          })
+
+          action.image = UIImage(named: "delete")
+          action.backgroundColor = .red
+          let configuration = UISwipeActionsConfiguration(actions: [UIContextualAction])
+          return configuration
+        }
+    
+    }
+    }
+    
   
-}
+

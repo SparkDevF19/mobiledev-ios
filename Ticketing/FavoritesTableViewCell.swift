@@ -18,6 +18,7 @@ class FavoritesTableViewCell: UITableViewCell {
     @IBOutlet weak var img: UIImageView!
     
     
+   
     @IBOutlet weak var eventlabel: UILabel!
     @IBOutlet weak var timelabel: UILabel!
     @IBOutlet weak var locationlabel: UILabel!
