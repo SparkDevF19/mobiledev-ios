@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1n-3y-fM4">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jhc-Mz-065">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,23 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="Hge-Dk-QYB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngL-Kn-YHG">
-                                <rect key="frame" x="69" y="487" width="141" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3vb-gD-vGa"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="zCb-va-rp2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfq-1D-bzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1159" y="834"/>
+            <point key="canvasLocation" x="-1159.4202898550725" y="833.70535714285711"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="DQY-pl-Tsk">
+            <objects>
+                <viewController id="Jhc-Mz-065" customClass="detailViewController" customModule="Ticketing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JtV-Pw-tg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-b3-cCe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="767"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3r7-cz-X56">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="525"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jhc-Mz-065" id="UyU-7C-MwK"/>
+                                    <outlet property="delegate" destination="Jhc-Mz-065" id="qAK-YP-sGC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x7p-b3-cCe" firstAttribute="top" secondItem="q1O-6l-u2o" secondAttribute="top" id="MGD-nV-Gtb"/>
+                            <constraint firstItem="x7p-b3-cCe" firstAttribute="trailing" secondItem="q1O-6l-u2o" secondAttribute="trailing" id="W02-wW-x3N"/>
+                            <constraint firstItem="q1O-6l-u2o" firstAttribute="bottom" secondItem="x7p-b3-cCe" secondAttribute="bottom" constant="51" id="h0Y-ct-4ON"/>
+                            <constraint firstItem="x7p-b3-cCe" firstAttribute="leading" secondItem="q1O-6l-u2o" secondAttribute="leading" id="hf2-eN-wbx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q1O-6l-u2o"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailTableView" destination="x7p-b3-cCe" id="t7D-gp-ESr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYf-8g-DfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142.02898550724638" y="903.34821428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Clf-BQ-jrR">
@@ -49,7 +81,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pbU-da-pV4"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="D7U-vI-f7X"/>
@@ -74,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XqB-Ig-2Ui"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="HDS-8y-9eb"/>

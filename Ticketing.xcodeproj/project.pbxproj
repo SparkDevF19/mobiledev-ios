@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
-		79BA6F36233A8B40003309AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F35233A8B40003309AC /* ViewController.swift */; };
 		79BA6F39233A8B40003309AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Main.storyboard */; };
 		79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3A233A8B48003309AC /* Assets.xcassets */; };
 		79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
+		A2100A882361E30F002634FB /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2100A862361E30F002634FB /* DescriptionTableViewCell.swift */; };
+		A2100A892361E30F002634FB /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2100A872361E30F002634FB /* DescriptionTableViewCell.xib */; };
+		A22A559C236B275100A9054B /* EventImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A559B236B275100A9054B /* EventImageHeaderView.swift */; };
+		A22A559E236B277D00A9054B /* EventImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22A559D236B277D00A9054B /* EventImageHeaderView.xib */; };
+		A22A55A1236B2A6700A9054B /* UIView+LoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A55A0236B2A6700A9054B /* UIView+LoadNib.swift */; };
+		A2E1E6C5236887250069DF3D /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1E6C3236887250069DF3D /* LocationTableViewCell.swift */; };
+		A2E1E6C6236887250069DF3D /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E1E6C4236887250069DF3D /* LocationTableViewCell.xib */; };
+		A2FA8034234F6F0D00D20273 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FA8033234F6F0D00D20273 /* detailViewController.swift */; };
+		A2FA8037234F701400D20273 /* EventGeneralDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FA8035234F701400D20273 /* EventGeneralDetailsTableViewCell.swift */; };
+		A2FA8038234F701400D20273 /* EventGeneralDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2FA8036234F701400D20273 /* EventGeneralDetailsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		79BA6F30233A8B40003309AC /* Ticketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79BA6F35233A8B40003309AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79BA6F38233A8B40003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79BA6F3A233A8B48003309AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BA6F3D233A8B48003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		79BA6F4F233A8B49003309AC /* TicketingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F53233A8B49003309AC /* TicketingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingUITests.swift; sourceTree = "<group>"; };
 		79BA6F55233A8B49003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2100A862361E30F002634FB /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A2100A872361E30F002634FB /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A22A559B236B275100A9054B /* EventImageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageHeaderView.swift; sourceTree = "<group>"; };
+		A22A559D236B277D00A9054B /* EventImageHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventImageHeaderView.xib; sourceTree = "<group>"; };
+		A22A55A0236B2A6700A9054B /* UIView+LoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadNib.swift"; sourceTree = "<group>"; };
+		A2E1E6C3236887250069DF3D /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		A2E1E6C4236887250069DF3D /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		A2FA8033234F6F0D00D20273 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		A2FA8035234F701400D20273 /* EventGeneralDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventGeneralDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		A2FA8036234F701400D20273 /* EventGeneralDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventGeneralDetailsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +115,21 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
+				A22A559F236B2A5400A9054B /* Extensions */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
-				79BA6F35233A8B40003309AC /* ViewController.swift */,
+				A2FA8033234F6F0D00D20273 /* detailViewController.swift */,
 				79BA6F37233A8B40003309AC /* Main.storyboard */,
+				A2FA8035234F701400D20273 /* EventGeneralDetailsTableViewCell.swift */,
+				A2FA8036234F701400D20273 /* EventGeneralDetailsTableViewCell.xib */,
+				A2100A862361E30F002634FB /* DescriptionTableViewCell.swift */,
+				A2E1E6C3236887250069DF3D /* LocationTableViewCell.swift */,
+				A2E1E6C4236887250069DF3D /* LocationTableViewCell.xib */,
+				A2100A872361E30F002634FB /* DescriptionTableViewCell.xib */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
+				A22A559B236B275100A9054B /* EventImageHeaderView.swift */,
+				A22A559D236B277D00A9054B /* EventImageHeaderView.xib */,
 			);
 			path = Ticketing;
 			sourceTree = "<group>";
@@ -123,6 +150,14 @@
 				79BA6F55233A8B49003309AC /* Info.plist */,
 			);
 			path = TicketingUITests;
+			sourceTree = "<group>";
+		};
+		A22A559F236B2A5400A9054B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A22A55A0236B2A6700A9054B /* UIView+LoadNib.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FA8038234F701400D20273 /* EventGeneralDetailsTableViewCell.xib in Resources */,
+				A22A559E236B277D00A9054B /* EventImageHeaderView.xib in Resources */,
+				A2100A892361E30F002634FB /* DescriptionTableViewCell.xib in Resources */,
+				A2E1E6C6236887250069DF3D /* LocationTableViewCell.xib in Resources */,
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
@@ -256,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
+				A2100A882361E30F002634FB /* DescriptionTableViewCell.swift in Sources */,
+				A22A55A1236B2A6700A9054B /* UIView+LoadNib.swift in Sources */,
+				A2E1E6C5236887250069DF3D /* LocationTableViewCell.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
+				A2FA8037234F701400D20273 /* EventGeneralDetailsTableViewCell.swift in Sources */,
+				A22A559C236B275100A9054B /* EventImageHeaderView.swift in Sources */,
+				A2FA8034234F6F0D00D20273 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
