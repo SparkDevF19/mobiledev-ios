@@ -59,26 +59,20 @@ extension FavoritesViewController {
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        guard let favorite = dataSource?.delete(at: indexPath) else {
-        return nil
-      }
-          let title = delete
-            NSLocalizedString("Delete", comment: "Delete")
-
-          let action = UIContextualAction(style: .normal, title: title,
-            handler: { (action, view, completionHandler) in
-            self.dataSource?.setDelete(!delete, at: indexPath)
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { action, view, completionHandler in
+            print("Finished removing cell \(indexPath)")
             completionHandler(true)
-          })
-
-          action.image = UIImage(named: "delete")
-          action.backgroundColor = .red
-          let configuration = UISwipeActionsConfiguration(actions: [UIContextualAction])
-          return configuration
         }
+        
+        deleteAction.backgroundColor = .red
+        
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
+    }
     
-    }
-    }
+}
+
     
   
 
