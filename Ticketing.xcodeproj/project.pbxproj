@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0729D8A2237560A200800EC2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729D8A1237560A200800EC2 /* File.swift */; };
 		0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */; };
+		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
+		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
 		79BA6F36233A8B40003309AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F35233A8B40003309AC /* ViewController.swift */; };
 		79BA6F39233A8B40003309AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Main.storyboard */; };
@@ -38,8 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0729D8A1237560A200800EC2 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0769FD6F2368D57B00B367EC /* instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions.md; sourceTree = "<group>"; };
+		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
+		076B941A236CC9AD003AE1ED /* seatMap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seatMap.gif; sourceTree = "<group>"; };
 		152470C1BD4D6B9556A2D3D6 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		168B3C26A285C37BB1D5D4AC /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B345CBD9FDD04C5696CCD1 /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0729D8A02375609000800EC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0729D8A1237560A200800EC2 /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0769FD6C2368D4B000B367EC /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +113,15 @@
 				0769FD6F2368D57B00B367EC /* instructions.md */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		076B9417236B19CE003AE1ED /* Purchasing */ = {
+			isa = PBXGroup;
+			children = (
+				076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */,
+				076B941A236CC9AD003AE1ED /* seatMap.gif */,
+			);
+			path = Purchasing;
 			sourceTree = "<group>";
 		};
 		313229F91FD0EA01A0AA0A57 /* Pods */ = {
@@ -139,12 +162,14 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
+				0729D8A02375609000800EC2 /* Models */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
 				79BA6F35233A8B40003309AC /* ViewController.swift */,
 				79BA6F37233A8B40003309AC /* Main.storyboard */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
+				076B9417236B19CE003AE1ED /* Purchasing */,
 				0769FD6C2368D4B000B367EC /* Firebase */,
 			);
 			path = Ticketing;
@@ -190,6 +215,7 @@
 				79BA6F2D233A8B40003309AC /* Frameworks */,
 				79BA6F2E233A8B40003309AC /* Resources */,
 				06ACFA44AEAC4E494B283BBD /* [CP] Embed Pods Frameworks */,
+				E696FDF030C5898842BCA63A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +254,7 @@
 				79BA6F4C233A8B49003309AC /* Frameworks */,
 				79BA6F4D233A8B49003309AC /* Resources */,
 				C4D4DB02456C15ECDE5D4BE1 /* [CP] Embed Pods Frameworks */,
+				B59721C1724D244E095FB433 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
+				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
 				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
@@ -372,6 +400,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B59721C1724D244E095FB433 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C4D4DB02456C15ECDE5D4BE1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,6 +456,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E696FDF030C5898842BCA63A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,6 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */,
+				0729D8A2237560A200800EC2 /* File.swift in Sources */,
 				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 			);
@@ -596,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = Ticketing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -614,6 +679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = Ticketing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,6 +699,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = TicketingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,6 +721,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = TicketingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,6 +742,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = TicketingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -694,6 +763,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWPXZ945C9;
 				INFOPLIST_FILE = TicketingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
