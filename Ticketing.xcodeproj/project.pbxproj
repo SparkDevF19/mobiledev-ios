@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0729D8A2237560A200800EC2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729D8A1237560A200800EC2 /* File.swift */; };
+		0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729D8A32375682400800EC2 /* FirebaseAPI.swift */; };
 		0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */; };
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0729D8A1237560A200800EC2 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0729D8A32375682400800EC2 /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0769FD6F2368D57B00B367EC /* instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions.md; sourceTree = "<group>"; };
 		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		0729D8A02375609000800EC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0729D8A1237560A200800EC2 /* File.swift */,
+				0729D8A32375682400800EC2 /* FirebaseAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -481,9 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */,
-				0729D8A2237560A200800EC2 /* File.swift in Sources */,
 				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
+				0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
