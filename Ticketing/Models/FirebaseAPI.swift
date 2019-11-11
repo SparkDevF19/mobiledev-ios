@@ -104,17 +104,30 @@ class FirebaseAPI {
         
         let credential = EmailAuthProvider.credential(withEmail: email, password: password)
         
-        Auth.auth().currentUser?.link(with: credential, completion: { (AuthDataResult, error) in
-            if (error) != nil {
-                completion(error, nil)
-                return
+        if Auth.auth().currentUser?.isAnonymous ?? false {
+            Auth.auth().currentUser?.link(with: credential, completion: { (AuthDataResult, error) in
+                if (error) != nil {
+                    completion(error, nil)
+                    return
+                }
+                
+                if let user = AuthDataResult?.user {
+                    completion(nil, user)
+                    return
+                }
+            })
+        } else {
+            Auth.auth().createUser(withEmail: email, password: password) { (AuthDataResult, error) in
+                if error != nil {
+                    completion(error, nil)
+                    return
+                }
+                
+                if let user = AuthDataResult?.user {
+                    completion(nil, user)
+                }
             }
-            
-            if let user = AuthDataResult?.user {
-                completion(nil, user)
-                return
-            }
-        })
+        }
     }
     
     // This will check if an account is logged, if not it will sign in anonymously
