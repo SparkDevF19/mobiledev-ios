@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7363DF55237B0AD6009684D5 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */; };
+		7363DF56237B0AD6009684D5 /* PaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */; };
+		7363DF58237B0B97009684D5 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */; };
 		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
 		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
 		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
+		7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsViewController.xib; sourceTree = "<group>"; };
+		7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
 		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
@@ -80,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7363DF52237B00AC009684D5 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */,
+				7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */,
+				7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
 		79BA6F27233A8B40003309AC = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +119,7 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
+				7363DF52237B00AC009684D5 /* Payments */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
 				79BA6F35233A8B40003309AC /* ViewController.swift */,
 				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
@@ -241,6 +258,7 @@
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
 				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
+				7363DF56237B0AD6009684D5 /* PaymentsViewController.xib in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7363DF55237B0AD6009684D5 /* PaymentsTableViewCell.swift in Sources */,
 				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
 				73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */,
 				73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */,
+				7363DF58237B0B97009684D5 /* PaymentsTableViewController.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
