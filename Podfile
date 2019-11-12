@@ -8,6 +8,7 @@ target 'Ticketing' do
   # Pods for Ticketing
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Alamofire', '~> 5.0.0-rc.3'
 
   target 'TicketingTests' do
     inherit! :search_paths
