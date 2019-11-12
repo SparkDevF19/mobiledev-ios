@@ -22,14 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        let root = SeatSelectViewController()
-        let navigationController = UINavigationController(rootViewController: root)
-        
-        window?.rootViewController = navigationController
-        
         
         return true
     }
