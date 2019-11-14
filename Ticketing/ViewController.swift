@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //Reference to First Name test field
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Add the acction for the text field
+        firstNameTextField.addTarget(self, action: #selector(handleTextFieldChanged), for: .editingChanged)
     }
-
-
+    //Acction for when the text field changes
+    @objc func handleTextFieldChanged(_ sender: UITextField) {
+    
+    guard let input = sender.text else { return }
+        
+        print("\(input)")
+    }
 }
 
