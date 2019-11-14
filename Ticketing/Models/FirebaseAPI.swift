@@ -9,13 +9,19 @@
 import Foundation
 import Firebase
 import GoogleSignIn
+import FirebaseFirestoreSwift
 
 class FirebaseAPI {
     
     static let shared = FirebaseAPI()
     
+    let userCollection = "user"
+    
+    private let database = Firestore.firestore()
+    
     private init(){}
     
+    // MARK: - Login Functions
     public func isLoggedIn() -> Bool {
         if Auth.auth().currentUser?.uid == nil {
             return false;
@@ -149,8 +155,50 @@ class FirebaseAPI {
         }
     }
     
+    // MARK: - Update Email/Password
+    func updateEmail(to email: String, completion: @escaping(Error?)->Void) {
+        Auth.auth().currentUser?.updateEmail(to: email, completion: { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func updatePassword(to password: String, completion: @escaping(Error?)->Void){
+        Auth.auth().currentUser?.updatePassword(to: password, completion: { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func forgotPassword(to email: String, completion: @escaping(Error?)->Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    func updateName(firstName: String, lastName: String, completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: firstName, lastName: lastName))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
     
     
     
-    
+}
+
+enum FirebaseAPIError: Error {
+    case noUID
 }
