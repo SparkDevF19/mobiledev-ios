@@ -8,6 +8,7 @@ target 'Ticketing' do
   # Pods for Ticketing
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'GoogleSignIn'
 
   target 'TicketingTests' do
     inherit! :search_paths
