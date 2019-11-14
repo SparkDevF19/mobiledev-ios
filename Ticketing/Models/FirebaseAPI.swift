@@ -186,6 +186,7 @@ class FirebaseAPI {
         }
     }
     
+    // MARK: - Update User Profile
     func updateName(firstName: String, lastName: String, completion: @escaping(Error?)->Void){
         if let userID = Auth.auth().currentUser?.uid {
             let data = try! Firestore.Encoder().encode(UserData(firstName: firstName, lastName: lastName))
@@ -195,7 +196,40 @@ class FirebaseAPI {
         }
     }
     
+    func updateCreditCard(cards: [CreditCard], completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: nil, lastName: nil, cards: cards))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
     
+    func updateFavorites(favorites: [String], completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: nil, lastName: nil, cards: nil, favorites: favorites))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
+    
+    
+    // MARK: - Get User
+    func getUser(completion: @escaping(Error?,UserData?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            database.collection(userCollection).document(userID).getDocument { (snapshot, error) in
+                if let error = error {
+                    completion(error,nil)
+                }
+                
+                if let snapshot = snapshot, snapshot.exists {
+                    let user = try! snapshot.data(as: UserData.self)
+                    completion(nil,user)
+                }
+            }
+        }
+    }
     
 }
 
