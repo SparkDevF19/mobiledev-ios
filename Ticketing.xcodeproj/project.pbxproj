@@ -14,6 +14,8 @@
 		79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
+		7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D882769237DA21F00742D60 /* SignUpViewController.swift */; };
+		7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88276B237DA2D700742D60 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		79BA6F4F233A8B49003309AC /* TicketingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F53233A8B49003309AC /* TicketingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingUITests.swift; sourceTree = "<group>"; };
 		79BA6F55233A8B49003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D882769237DA21F00742D60 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7D88276B237DA2D700742D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
 				79BA6F35233A8B40003309AC /* ViewController.swift */,
 				79BA6F37233A8B40003309AC /* Main.storyboard */,
+				7D882769237DA21F00742D60 /* SignUpViewController.swift */,
+				7D88276B237DA2D700742D60 /* LoginViewController.swift */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */,
+				7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */,
 				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 			);
