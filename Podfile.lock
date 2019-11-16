@@ -210,6 +210,10 @@ PODS:
     - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
   - GoogleDataTransport (3.1.0)
+    - Protobuf (>= 3.9.2, ~> 3.9)
+  - FirebaseFirestoreSwift (0.2):
+    - FirebaseFirestore (>= 1.6.1, ~> 1.6)
+  - GoogleDataTransport (3.0.1)
   - GoogleDataTransportCCTSupport (1.2.1):
     - GoogleDataTransport (~> 3.0)
     - nanopb (~> 0.3.901)
@@ -262,10 +266,12 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - Protobuf (3.10.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
+  - FirebaseFirestoreSwift
   - GoogleSignIn
   - IQKeyboardManagerSwift
 
@@ -281,6 +287,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
+    - FirebaseFirestoreSwift
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleSignIn

@@ -9,13 +9,19 @@
 import Foundation
 import Firebase
 import GoogleSignIn
+import FirebaseFirestoreSwift
 
 class FirebaseAPI {
     
     static let shared = FirebaseAPI()
     
+    let userCollection = "user"
+    
+    private let database = Firestore.firestore()
+    
     private init(){}
     
+    // MARK: - Login Functions
     public func isLoggedIn() -> Bool {
         if Auth.auth().currentUser?.uid == nil {
             return false;
@@ -149,8 +155,84 @@ class FirebaseAPI {
         }
     }
     
+    // MARK: - Update Email/Password
+    func updateEmail(to email: String, completion: @escaping(Error?)->Void) {
+        Auth.auth().currentUser?.updateEmail(to: email, completion: { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func updatePassword(to password: String, completion: @escaping(Error?)->Void){
+        Auth.auth().currentUser?.updatePassword(to: password, completion: { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        })
+    }
+    
+    func forgotPassword(to email: String, completion: @escaping(Error?)->Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if error != nil {
+                completion(error)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    // MARK: - Update User Profile
+    func updateName(firstName: String, lastName: String, completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: firstName, lastName: lastName))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
+    
+    func updateCreditCard(cards: [CreditCard], completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: nil, lastName: nil, cards: cards))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
+    
+    func updateFavorites(favorites: [String], completion: @escaping(Error?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            let data = try! Firestore.Encoder().encode(UserData(firstName: nil, lastName: nil, cards: nil, favorites: favorites))
+            database.collection(userCollection).document(userID).setData(data, merge: true,completion: completion)
+        } else {
+            completion(FirebaseAPIError.noUID)
+        }
+    }
     
     
+    // MARK: - Get User
+    func getUser(completion: @escaping(Error?,UserData?)->Void){
+        if let userID = Auth.auth().currentUser?.uid {
+            database.collection(userCollection).document(userID).getDocument { (snapshot, error) in
+                if let error = error {
+                    completion(error,nil)
+                }
+                
+                if let snapshot = snapshot, snapshot.exists {
+                    let user = try! snapshot.data(as: UserData.self)
+                    completion(nil,user)
+                }
+            }
+        }
+    }
     
-    
+}
+
+enum FirebaseAPIError: Error {
+    case noUID
 }
