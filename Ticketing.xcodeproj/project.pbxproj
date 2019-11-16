@@ -12,6 +12,7 @@
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
+		07CDA4DD23806421004B2798 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDA4DC23806421004B2798 /* EventModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
 		79BA6F36233A8B40003309AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F35233A8B40003309AC /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
 		076B941A236CC9AD003AE1ED /* seatMap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seatMap.gif; sourceTree = "<group>"; };
 		079DE3D4237DCD1F000E8C60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		07CDA4DC23806421004B2798 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
 		152470C1BD4D6B9556A2D3D6 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		168B3C26A285C37BB1D5D4AC /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				0729D8A32375682400800EC2 /* FirebaseAPI.swift */,
 				079DE3D4237DCD1F000E8C60 /* UserModel.swift */,
 				07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */,
+				07CDA4DC23806421004B2798 /* EventModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
 				07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
+				07CDA4DD23806421004B2798 /* EventModel.swift in Sources */,
 				079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */,
 				0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */,
 			);
