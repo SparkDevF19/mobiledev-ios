@@ -9,6 +9,7 @@ target 'Ticketing' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'GoogleSignIn'
+  pod 'IQKeyboardManagerSwift'
 
   target 'TicketingTests' do
     inherit! :search_paths
