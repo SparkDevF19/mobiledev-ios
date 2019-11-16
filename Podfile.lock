@@ -209,11 +209,9 @@ PODS:
     - "gRPC-C++ (= 0.0.9)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
-  - GoogleDataTransport (3.1.0)
-    - Protobuf (>= 3.9.2, ~> 3.9)
   - FirebaseFirestoreSwift (0.2):
     - FirebaseFirestore (>= 1.6.1, ~> 1.6)
-  - GoogleDataTransport (3.0.1)
+  - GoogleDataTransport (3.1.0)
   - GoogleDataTransportCCTSupport (1.2.1):
     - GoogleDataTransport (~> 3.0)
     - nanopb (~> 0.3.901)
@@ -266,7 +264,6 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - Protobuf (3.10.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -311,6 +308,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f
   FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
   FirebaseFirestore: 7acd8c85ce6b8955cedc0b9be17d456473605a93
+  FirebaseFirestoreSwift: 0437bb10d83f8161a9131da1739998254c78fdf5
   GoogleDataTransport: 67cc56f6280d1bc9d470285e851ec49ee9013dba
   GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
@@ -323,6 +321,6 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 43d9d8490001ecf452c98c04a6415af86fff6299
+PODFILE CHECKSUM: cffaad1bf0afd482b6365409da5998e905967be9
 
 COCOAPODS: 1.8.4

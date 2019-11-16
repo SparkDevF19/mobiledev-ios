@@ -294,8 +294,14 @@
                                             <action selector="sendTapped:" destination="iGb-Cx-ZWR" eventType="touchUpInside" id="ufh-NK-JQT"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVg-hn-jvE">
+                                        <rect key="frame" x="0.0" y="297" width="334" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-OQ-3Wp">
-                                        <rect key="frame" x="0.0" y="297" width="334" height="157"/>
+                                        <rect key="frame" x="0.0" y="351" width="334" height="103"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                 </subviews>
@@ -317,6 +323,7 @@
                     <navigationItem key="navigationItem" id="d3Y-Md-yY1"/>
                     <connections>
                         <outlet property="emailTextField" destination="xjJ-Hz-G5k" id="Xe6-SM-pLK"/>
+                        <outlet property="errorLabel" destination="IVg-hn-jvE" id="ox5-cy-OuH"/>
                         <outlet property="sendButtonLabel" destination="Qtq-y7-3SI" id="V9M-aP-rvr"/>
                     </connections>
                 </viewController>
