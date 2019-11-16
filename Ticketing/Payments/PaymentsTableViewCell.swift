@@ -15,10 +15,12 @@ class PaymentsViewController: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+     @IBOutlet weak var img: UIImageView!
+     @IBOutlet weak var paymentlabel: UILabel!
+     @IBOutlet weak var numberlabel: UILabel!
+     
        
     }
     
-}
+
+
