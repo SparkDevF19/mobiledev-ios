@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733A2EF0237F9DE20097E503 /* PaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 733A2EEF237F9DE20097E503 /* PaymentsTableViewCell.xib */; };
 		7363DF55237B0AD6009684D5 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */; };
-		7363DF56237B0AD6009684D5 /* PaymentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */; };
 		7363DF58237B0B97009684D5 /* PaymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */; };
 		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
 		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
@@ -40,8 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		733A2EEF237F9DE20097E503 /* PaymentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentsTableViewCell.xib; sourceTree = "<group>"; };
 		7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
-		7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsViewController.xib; sourceTree = "<group>"; };
 		7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewController.swift; sourceTree = "<group>"; };
 		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			children = (
 				7363DF53237B0AD6009684D5 /* PaymentsTableViewCell.swift */,
 				7363DF57237B0B97009684D5 /* PaymentsTableViewController.swift */,
-				7363DF54237B0AD6009684D5 /* PaymentsViewController.xib */,
+				733A2EEF237F9DE20097E503 /* PaymentsTableViewCell.xib */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -257,8 +257,8 @@
 			files = (
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
 				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
+				733A2EF0237F9DE20097E503 /* PaymentsTableViewCell.xib in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
-				7363DF56237B0AD6009684D5 /* PaymentsViewController.xib in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
