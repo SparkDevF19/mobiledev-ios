@@ -7,12 +7,31 @@
 //
 
 import Alamofire
+import SwiftyJSON
+
+enum NetworkError: Error {
+    case failure
+    case success
+}
 
 class TicketmasterClient {
-    public static func performRequest<T: Decodable>(route: APIRouter, decoder: JSONDecoder = JSONDecoder(), completion: @escaping (AFResult<T>) -> Void) -> DataRequest {
-        return AF.request(route)
-            .responseDecodable (decoder: decoder){ (response: AFDataResponse<T>) in
-                completion(response.result)
+    public func performRequest(route: APIRouter, decoder: JSONDecoder = JSONDecoder(), completion: @escaping ([JSON]?, NetworkError) -> Void) {
+        AF.request(route).responseJSON { response in
+            guard let data = response.data else {
+                print(response.data)
+                completion(nil, .failure)
+                return
+            }
+            
+            let json = try? JSON(data: data)
+            print(json)
+            let results = json?.arrayValue
+            guard let empty = results?.isEmpty, empty == false else {
+                completion(nil, .failure)
+                return
+            }
+            
+            completion(results, .success)
         }
     }
 }

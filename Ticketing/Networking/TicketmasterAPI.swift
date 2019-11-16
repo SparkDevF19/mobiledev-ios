@@ -8,9 +8,16 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
-class TicketmasterAPI {
-    static func getSuggested(latitude: Double, longitude: Double, completion: @escaping (AFResult<Suggest>) -> Void) {
-        TicketmasterClient.performRequest(route: .suggestions(lat: latitude, long: longitude), completion: completion)
+final class TicketmasterAPI {
+    static func getSuggested(latitude: Double, longitude: Double) {
+        TicketmasterClient().performRequest(route: .suggestions(lat: latitude, long: longitude)) { results, error in
+            guard error == .failure else { return }
+            
+            if let results = results, results.isEmpty == false {
+                
+            }
+        }
     }
 }

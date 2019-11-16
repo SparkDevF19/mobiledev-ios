@@ -27,7 +27,7 @@ enum APIRouter: APIConfiguration {
     var path: String {
         switch self {
         case .suggestions(_, _):
-            return "/suggest/"
+            return "suggest"
         }
     }
     
@@ -36,11 +36,19 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .suggestions(let lat, let long):
             guard let lat = lat, let long = long else {
-                return [K.APIParameterKey.latlong: "25.7617,80.1918"]
+                return [K.APIParameterKey.apiKey: AppSecrets.tmApiClientSecret, K.APIParameterKey.latlong: "25.7617,80.1918"]
             }
             
-            return [K.APIParameterKey.latlong: "\(lat),\(long)"]
+            return [K.APIParameterKey.apiKey: AppSecrets.tmApiClientSecret, K.APIParameterKey.latlong: "\(lat),\(long)"]
             
+        }
+    }
+    
+    // MARK: - JSON Keys
+    var jsonKeys: String? {
+        switch self {
+        case .suggestions(let lat, let long):
+            return "links"
         }
     }
     
@@ -54,17 +62,15 @@ enum APIRouter: APIConfiguration {
         
         urlRequest.httpMethod = method.rawValue
         
-        urlRequest.setValue(AppSecrets.tmApiClientSecret, forHTTPHeaderField: K.APIParameterKey.apiKey)
-        
         if let parameters = parameters {
             do {
-                for (key, value) in parameters {
-                    urlRequest.setValue(value as? String, forHTTPHeaderField: key)
-                }
+                urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
             } catch {
                 throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
             }
         }
+        
+        print(urlRequest)
         
         return urlRequest
     }

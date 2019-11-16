@@ -89,11 +89,13 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.9.2)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - Firebase/Auth
   - Firebase/Firestore
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
@@ -115,6 +117,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
@@ -135,7 +138,8 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 67fb42ba613def994e61854de2b3164f13790cc4
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: c9e34a991ace70d19580e827b8d57afe677b5703
+PODFILE CHECKSUM: b4fdd464ebaf2e9463410630431245db2f4cf11e
 
 COCOAPODS: 1.8.4

@@ -9,5 +9,5 @@
 import Foundation
 
 struct AppSecrets {
-  static let tmApiClientSecret=""
+  static let tmApiClientSecret="msWY7kJoLLQFHJGDDYBTJI6aolGACvzA"
 }
