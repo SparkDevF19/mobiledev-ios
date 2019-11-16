@@ -25,6 +25,14 @@ class ProfileCVC: UIViewController{
         pwTextField.isSecureTextEntry = true
     }
     
+    //Validate name fields
+    func isNameValid(name: String) -> Bool {
+        guard name.count < 3, name.count > 15 else {return}
+        
+        
+        return
+    }
+    
     @objc func txtFieldChanged(_ sender: UITextField) {
         guard let input =  sender.text else { return }
         
