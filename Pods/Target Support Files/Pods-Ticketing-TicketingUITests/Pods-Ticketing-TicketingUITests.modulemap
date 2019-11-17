@@ -1,6 +1,0 @@
-framework module Pods_Ticketing_TicketingUITests {
-  umbrella header "Pods-Ticketing-TicketingUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
