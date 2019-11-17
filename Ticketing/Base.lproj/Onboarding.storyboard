@@ -125,7 +125,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="2fg-Dq-ZGH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="MNM-t2-17w" id="wHO-j6-fpI"/>
                                                 </connections>
@@ -362,7 +362,7 @@
                                             <constraint firstAttribute="height" constant="50" id="mIw-MQ-Kix"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
                                         <connections>
                                             <outlet property="delegate" destination="krX-rX-V11" id="19X-Oh-bkE"/>
                                         </connections>
@@ -373,7 +373,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Zbb-E4-4ys"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                         <connections>
                                             <outlet property="delegate" destination="krX-rX-V11" id="QCd-xb-ZWR"/>
                                         </connections>
@@ -384,7 +384,7 @@
                                             <constraint firstAttribute="height" constant="50" id="bGa-1n-TSd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                         <connections>
                                             <outlet property="delegate" destination="krX-rX-V11" id="Ffw-n5-yLf"/>
                                         </connections>
@@ -406,7 +406,7 @@
                                             <constraint firstAttribute="height" constant="50" id="lZc-7v-QpJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                         <connections>
                                             <outlet property="delegate" destination="krX-rX-V11" id="Ztw-0d-G9Z"/>
                                         </connections>
@@ -458,6 +458,7 @@
                         <outlet property="lastNameTextField" destination="b4t-UC-6tE" id="dYT-6w-7W7"/>
                         <outlet property="passwordTextField" destination="2oP-N2-DhZ" id="dOf-x1-dwa"/>
                         <outlet property="signUpButtonLabel" destination="uh7-ae-Q9x" id="0sX-1J-oXq"/>
+                        <segue destination="e1n-3y-fM4" kind="show" identifier="segueFromSignUp" id="BWC-gv-oQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LN-iq-sOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -468,7 +469,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-4193" y="1278"/>
+            <point key="canvasLocation" x="-4000" y="1177"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Wo-Ei-ZFD">
@@ -540,4 +541,7 @@
         <image name="googlesignin" width="24" height="24"/>
         <image name="ticket" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="BWC-gv-oQi"/>
+    </inferredMetricsTieBreakers>
 </document>

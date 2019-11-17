@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
@@ -26,6 +27,89 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signUpTapped(_ sender: Any) {
         
+        //if statement checking that both text fields were filled in
+        if !fieldValidation(textField: emailTextField) || !fieldValidation(textField: passwordTextField) ||
+            !fieldValidation(textField: confirmPasswordTextField) || !fieldValidation(textField: firstNameTextField) ||
+            !fieldValidation(textField: lastNameTextField){
+            
+            print("Empty fields error")
+            self.errorLabel.text = "Please fill in all fields"
+            self.errorLabel.alpha = 1
+            self.errorLabel.errorShake()
+            return
+        }
+        
+        if !confirmPassword(pass: passwordTextField.text!, confirmpw: confirmPasswordTextField.text!){
+            print("Passwords don't match")
+            self.errorLabel.text = "Passwords don't match"
+            self.errorLabel.numberOfLines = 0
+            self.errorLabel.alpha = 1
+            self.errorLabel.errorShake()
+            return
+        }
+        
+        FirebaseAPI.shared.registerUser(email: emailTextField.text!, password: passwordTextField.text!) { (error, user) in
+            
+            if let error = error as NSError? {
+
+            guard let errorCode = AuthErrorCode(rawValue: error.code) else {
+
+                print("there was an error logging in but it could not be matched with a firebase code")
+                self.errorLabel.text = "Error registering"
+                self.errorLabel.alpha = 1
+                self.errorLabel.errorShake()
+                return
+
+            }
+                switch errorCode{
+                case .invalidEmail:
+                    print("invalid email error")
+                    self.errorLabel.text = "Invalid email"
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.errorShake()
+                case .emailAlreadyInUse:
+                    print("Email already in use")
+                    self.errorLabel.text = "Email already in use"
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.errorShake()
+                case .weakPassword:
+                    print("Weak password error")
+                    self.errorLabel.text = "Weak password"
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.errorShake()
+                default:
+                    print(error)
+                    print("default switch case error")
+                    self.errorLabel.text = "Error registering"
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.errorShake()
+                }
+                return
+            }
+            
+            FirebaseAPI.shared.updateName(firstName: self.firstNameTextField.text!, lastName: self.lastNameTextField.text!) { (error) in
+            if let error = error {
+                print(error)
+                print("Update name error")
+                self.errorLabel.text = "Invalid name field"
+                self.errorLabel.alpha = 1
+                self.errorLabel.errorShake()
+                return
+            }
+            
+            if let user = user{
+                self.performSegue(withIdentifier: "segueFromSignUp", sender: self)
+            }
+            
+        }
+    }
+        
+        
+        
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        errorLabel.alpha = 0
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -105,5 +189,22 @@ extension SignUpViewController {
         }
         return true
     }
+    
+    func confirmPassword(pass: String, confirmpw: String) -> Bool{
+        if pass != confirmpw{
+            return false
+        }
+        else{
+            return true
+        }
+    }
+    
+    func fieldValidation(field: UITextField) -> Bool{
+        if field.text!.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty{
+            return false
+        }
+        return true
+    }
+    
 }
 
