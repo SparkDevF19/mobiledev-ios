@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4C-dy-jz0">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4C-dy-jz0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-b3-cCe">
-                                <rect key="frame" x="0.0" y="88" width="414" height="723"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="811"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3r7-cz-X56">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="525"/>
@@ -53,45 +51,60 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dQp-BV-5qf">
                                         <rect key="frame" x="0.0" y="27" width="399" height="74"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-bx-GqL">
-                                                <rect key="frame" x="0.0" y="0.0" width="399" height="74"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-rS-axm">
-                                                        <rect key="frame" x="245" y="-14" width="120" height="43"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.1546708259825588" green="0.53933607618681523" blue="0.91447648143521243" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" title="Buy">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="buyButton:" destination="Jhc-Mz-065" eventType="touchUpInside" id="vSH-Qp-Ci1"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-8c-mZT">
-                                                        <rect key="frame" x="41" y="-3" width="128" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-bx-GqL">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="71"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-rS-axm">
+                                                <rect key="frame" x="259" y="8" width="120" height="43"/>
+                                                <color key="backgroundColor" red="0.1546708259825588" green="0.53933607618681523" blue="0.91447648143521243" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Adu-Zv-FhQ"/>
+                                                    <constraint firstAttribute="height" constant="43" id="GK8-xx-5v5"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Buy">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buyButton:" destination="Jhc-Mz-065" eventType="touchUpInside" id="vSH-Qp-Ci1"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ - $$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-8c-mZT">
+                                                <rect key="frame" x="24" y="17" width="128" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="Bh9-TX-Sjl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Fdx-8c-mZT" firstAttribute="top" secondItem="ML7-bx-GqL" secondAttribute="top" constant="17" id="V9P-S1-kl7"/>
+                                            <constraint firstItem="Fdx-8c-mZT" firstAttribute="leading" secondItem="ML7-bx-GqL" secondAttribute="leading" constant="24" id="gmK-wl-hVN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fdx-8c-mZT" secondAttribute="bottom" constant="33" id="qqT-ek-dSh"/>
+                                            <constraint firstItem="Xn8-rS-axm" firstAttribute="top" secondItem="ML7-bx-GqL" secondAttribute="top" constant="8" id="tqo-cO-IYs"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xn8-rS-axm" secondAttribute="trailing" constant="15" id="yjQ-II-Ra2"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ML7-bx-GqL" firstAttribute="top" secondItem="eMr-7X-qLx" secondAttribute="top" id="74U-Rg-2D9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ML7-bx-GqL" secondAttribute="bottom" id="O0M-Th-9UX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ML7-bx-GqL" secondAttribute="trailing" id="kSY-tN-uUV"/>
+                                    <constraint firstItem="ML7-bx-GqL" firstAttribute="leading" secondItem="eMr-7X-qLx" secondAttribute="leading" id="qvU-LU-GT9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="x7p-b3-cCe" firstAttribute="top" secondItem="q1O-6l-u2o" secondAttribute="top" id="MGD-nV-Gtb"/>
+                            <constraint firstItem="x7p-b3-cCe" firstAttribute="top" secondItem="JtV-Pw-tg0" secondAttribute="top" id="EFX-zd-6ty"/>
                             <constraint firstItem="x7p-b3-cCe" firstAttribute="trailing" secondItem="q1O-6l-u2o" secondAttribute="trailing" id="W02-wW-x3N"/>
                             <constraint firstItem="eMr-7X-qLx" firstAttribute="top" secondItem="x7p-b3-cCe" secondAttribute="bottom" constant="8" id="bjT-9S-dNJ"/>
-                            <constraint firstItem="q1O-6l-u2o" firstAttribute="bottom" secondItem="x7p-b3-cCe" secondAttribute="bottom" constant="51" id="h0Y-ct-4ON"/>
                             <constraint firstItem="x7p-b3-cCe" firstAttribute="leading" secondItem="q1O-6l-u2o" secondAttribute="leading" id="hf2-eN-wbx"/>
                             <constraint firstAttribute="bottom" secondItem="eMr-7X-qLx" secondAttribute="bottom" constant="6" id="qMl-US-QqC"/>
                             <constraint firstItem="q1O-6l-u2o" firstAttribute="trailing" secondItem="eMr-7X-qLx" secondAttribute="trailing" constant="10" id="r82-TO-Ich"/>
@@ -99,14 +112,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q1O-6l-u2o"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Singer Name" id="4zT-rM-g4b">
-                        <barButtonItem key="rightBarButtonItem" title="Share" width="21" id="0oZ-rA-Pdo">
-                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
-                            <connections>
-                                <action selector="shareButton:" destination="Jhc-Mz-065" id="vqd-yS-eqx"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Singer Name" id="0cp-t3-fuu"/>
                     <connections>
                         <outlet property="buyButtonFeature" destination="Xn8-rS-axm" id="xld-3T-jNq"/>
                         <outlet property="detailTableView" destination="x7p-b3-cCe" id="t7D-gp-ESr"/>

@@ -28,29 +28,23 @@ class detailViewController: UIViewController {
     }
  
     @IBOutlet weak var detailTableView: UITableView!
-    
-    @IBAction func shareButton(_ sender: Any) {
-    }
-    
     @IBOutlet weak var buyButtonFeature: UIButton!
     @IBOutlet weak var priceLable: UILabel!
     
-    @IBAction func buyButton(_ sender: UIButton) {
+    @IBAction func buyButton(_ sender: UIButton){
+        
     }
     
     override func viewDidLoad() {
-   
-       
         buyButtonFeature.layer.cornerRadius = buyButtonFeature.bounds.size.height / 2.0
         super.viewDidLoad()
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.backgroundColor = .clear
+        
         detailTableView.tableFooterView = UIView()
         configureTableView()
         setupHeader()
+        
     }
+        
     
     func configureTableView() {
         detailTableView.register(UINib.init(nibName: CellNibNames.eventDetailCell, bundle: nil), forCellReuseIdentifier: CellIdentifiers.eventDetailCell)
@@ -61,10 +55,8 @@ class detailViewController: UIViewController {
     }
     
     func setupHeader() {
-//        let headerNib = UINib(nibName: "EventImageHeaderView", bundle: nil)
-//        detailTableView.tableHeaderView =
         let headerNib = UINib.init(nibName: "EventImageHeaderView", bundle: Bundle.main)
-//        detailTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "EventImageHeaderView")
+        
         let headerView = headerNib.instantiate(withOwner: nil, options: nil)[0] as! EventImageHeaderView
         headerView.headerImage.image = #imageLiteral(resourceName: "AOSMYG3AUJA3FAGQMQQ266O6OY")
         detailTableView.tableHeaderView = headerView
@@ -79,18 +71,19 @@ extension detailViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      // var cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.eventDetailCell, for: indexPath) as! EventGeneralDetailsTableViewCell
 
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.eventDetailCell, for: indexPath) as! EventGeneralDetailsTableViewCell
             cell.title.text  = "MIA"
             cell.detail.text = "Name"
             cell.label.text  = "01/01/2020"
+            cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.descriptionCell, for: indexPath) as! DescriptionTableViewCell
             cell.descriptionLabel.text = "Description"
             cell.artistDetail.text = "Details About the Singer"
+            cell.selectionStyle = .none
             return cell
         }
         else{
@@ -100,9 +93,11 @@ extension detailViewController: UITableViewDelegate, UITableViewDataSource{
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location, span: span)
             cell.map.setRegion(region, animated: true)
+            cell.selectionStyle = .none
             return cell
         }
    }
+    
 }
 
 
