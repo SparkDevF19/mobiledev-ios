@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
-		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
-		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
 		0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729D8A32375682400800EC2 /* FirebaseAPI.swift */; };
 		0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */; };
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
+		737AB59E2383154C004E438B /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59C2383154C004E438B /* Favorites.storyboard */; };
+		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
+		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
+		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
 		79BA6F36233A8B40003309AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F35233A8B40003309AC /* ViewController.swift */; };
 		79BA6F39233A8B40003309AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Main.storyboard */; };
@@ -46,9 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		0729D8A32375682400800EC2 /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0769FD6F2368D57B00B367EC /* instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions.md; sourceTree = "<group>"; };
@@ -61,6 +59,10 @@
 		22B345CBD9FDD04C5696CCD1 /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
 		2526ED5AD95F1DFD73A81CA4 /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
 		70D00B516DD66063DAEE7522 /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737AB59D2383154C004E438B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ticketing/Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
+		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		79BA6F30233A8B40003309AC /* Ticketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BA6F35233A8B40003309AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				79BA6F35233A8B40003309AC /* ViewController.swift */,
 				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
 				73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */,
+				737AB59C2383154C004E438B /* Favorites.storyboard */,
 				79BA6F37233A8B40003309AC /* Main.storyboard */,
 				73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
@@ -333,6 +336,7 @@
 				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
 				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
 				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
+				737AB59E2383154C004E438B /* Favorites.storyboard in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
 			);
@@ -539,6 +543,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		737AB59C2383154C004E438B /* Favorites.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737AB59D2383154C004E438B /* Base */,
+			);
+			name = Favorites.storyboard;
+			sourceTree = "<group>";
+		};
 		79BA6F37233A8B40003309AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
