@@ -105,7 +105,7 @@ class FirebaseAPI {
         }
     }
     
-    // Links Anonymous account with new registered email, will return error if email already in use
+    //Links Anonymous account with new registered email, will return error if email already in use
     public func registerUser(email: String, password: String, completion: @escaping(Error?,User?)-> Void){
         
         let credential = EmailAuthProvider.credential(withEmail: email, password: password)
