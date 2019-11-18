@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4C-dy-jz0">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4C-dy-jz0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -112,7 +114,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q1O-6l-u2o"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Singer Name" id="0cp-t3-fuu"/>
+                    <navigationItem key="navigationItem" title="Singer Name" id="0cp-t3-fuu">
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="Nwn-Pi-NuR">
+                            <connections>
+                                <action selector="favorite:" destination="Jhc-Mz-065" id="nxe-Gt-p5U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="buyButtonFeature" destination="Xn8-rS-axm" id="xld-3T-jNq"/>
                         <outlet property="detailTableView" destination="x7p-b3-cCe" id="t7D-gp-ESr"/>

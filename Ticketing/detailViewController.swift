@@ -31,6 +31,8 @@ class detailViewController: UIViewController {
     @IBOutlet weak var buyButtonFeature: UIButton!
     @IBOutlet weak var priceLable: UILabel!
     
+    @IBAction func favorite(_ sender: UIBarButtonItem) {
+    }
     @IBAction func buyButton(_ sender: UIButton){
         
     }
