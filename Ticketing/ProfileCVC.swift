@@ -22,22 +22,12 @@ class ProfileCVC: UIViewController {
     @IBOutlet weak var errorEmailLable: UILabel!
     @IBOutlet weak var errorPWLable: UILabel!
     @IBOutlet weak var saveButton: UIButton!
+    var isGoogleSignIn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         IQKeyboardManager.shared.enable = true
-        //Checking if is a google log in
-        if let providerData = Auth.auth().currentUser?.providerData {
-            for userInfo in providerData {
-                if  userInfo.providerID == GoogleAuthProviderID {
-                    emailTextField.isUserInteractionEnabled = false
-                    pwTextField.isUserInteractionEnabled = false
-                }
-            }
-        }
-        emailTextField.isUserInteractionEnabled = true
-        pwTextField.isUserInteractionEnabled = true
-        
+       
         //Error messages for incorrext textField input
         errorFNameLable.isHidden = true
         errorLNameLable.isHidden = true
@@ -47,7 +37,25 @@ class ProfileCVC: UIViewController {
         saveButton.layer.cornerRadius = 20.0
         pwTextField.isSecureTextEntry = true
     }
-   
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //Checking if is a google log in
+        if let providerData = Auth.auth().currentUser?.providerData {
+            for userInfo in providerData {
+                if  userInfo.providerID == EmailAuthProviderID {
+                    emailTextField.isEnabled = true
+                    pwTextField.isEnabled = true
+                }
+                if  userInfo.providerID == GoogleAuthProviderID {
+                    emailTextField.isEnabled = false
+                    pwTextField.isEnabled = false
+                    isGoogleSignIn = true
+                }
+            }
+        }
+        
+    }
+    
     //MARK: Save Button
     @IBAction func saveButton(_ sender: UIButton) {
         
@@ -80,34 +88,38 @@ class ProfileCVC: UIViewController {
         }
         
         //update email
-        if(!emailTextField.txtFieldsValidation(type: .email)) {
-            errorEmailLable.isHidden = false
-        }
-        else {
-            errorEmailLable.isHidden = true
-            FirebaseAPI.shared.updateEmail(to: emailTextField.text!) {
-                error in
-                if let error = error {
-                    print(error)
+        if(!isGoogleSignIn) {
+            
+            if(!emailTextField.txtFieldsValidation(type: .email)) {
+                errorEmailLable.isHidden = false
+            }
+            else {
+                errorEmailLable.isHidden = true
+                FirebaseAPI.shared.updateEmail(to: emailTextField.text!) {
+                    error in
+                    if let error = error {
+                        print(error)
+                    }
                 }
             }
-        }
-        
-        //update password
-        if(!pwTextField.txtFieldsValidation(type: .password)) {
-            errorPWLable.isHidden = false
-        }
-        else {
-            errorPWLable.isHidden = true
-            FirebaseAPI.shared.updatePassword(to: pwTextField.text!) {
-                error in
-                if let error = error {
-                    print(error)
+            
+            //update password
+            if(!pwTextField.txtFieldsValidation(type: .password)) {
+                errorPWLable.isHidden = false
+            }
+            else {
+                errorPWLable.isHidden = true
+                FirebaseAPI.shared.updatePassword(to: pwTextField.text!) {
+                    error in
+                    if let error = error {
+                        print(error)
+                    }
                 }
             }
         }
     }
 }
+
 
 //MARK: Extension
 extension UITextField {
