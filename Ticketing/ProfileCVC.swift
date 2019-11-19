@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
 
 class ProfileCVC: UIViewController {
     
@@ -21,9 +23,20 @@ class ProfileCVC: UIViewController {
     @IBOutlet weak var errorPWLable: UILabel!
     @IBOutlet weak var saveButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        IQKeyboardManager.shared.enable = true
+        //Checking if is a google log in
+        if let providerData = Auth.auth().currentUser?.providerData {
+            for userInfo in providerData {
+                if  userInfo.providerID == GoogleAuthProviderID {
+                    emailTextField.isUserInteractionEnabled = false
+                    pwTextField.isUserInteractionEnabled = false
+                }
+            }
+        }
+        emailTextField.isUserInteractionEnabled = true
+        pwTextField.isUserInteractionEnabled = true
         
         //Error messages for incorrext textField input
         errorFNameLable.isHidden = true
@@ -31,52 +44,66 @@ class ProfileCVC: UIViewController {
         errorEmailLable.isHidden = true
         errorPWLable.isHidden = true
         
-        saveButton.layer.cornerRadius = 25.0
-        
-        fNameTextField.addTarget(self, action: #selector(txtFieldChanged), for: .editingDidEnd)
-        lNameTextField.addTarget(self, action: #selector(txtFieldChanged), for: .editingDidEnd)
-        emailTextField.addTarget(self, action: #selector(txtFieldChanged), for: .editingDidEnd)
-        pwTextField.addTarget(self, action: #selector(txtFieldChanged), for: .editingDidEnd)
+        saveButton.layer.cornerRadius = 20.0
         pwTextField.isSecureTextEntry = true
     }
-    
-    @objc func txtFieldChanged(_ sender: UITextField) {
-        guard let input = sender.text else { return }
-    }
    
-    //Save all the updates to the profile
+    //MARK: Save Button
     @IBAction func saveButton(_ sender: UIButton) {
-        if(fNameTextField.txtFieldsValidation(type: .name) == false || lNameTextField.txtFieldsValidation(type: .name) == false) {
-            if(fNameTextField.txtFieldsValidation(type: .name) == false) {
-                errorFNameLable.isHidden = false
-            }
-            if(lNameTextField.txtFieldsValidation(type: .name) == false) {
-                errorLNameLable.isHidden = false
-            }
+        
+        var update = true
+        
+        //update name
+        if(fNameTextField.txtFieldsValidation(type: .name)) {
+            errorFNameLable.isHidden = true
         }
         else {
-            errorFNameLable.isHidden = true
+            update = false
+            errorFNameLable.isHidden = false
+        }
+        
+        if(lNameTextField.txtFieldsValidation(type: .name)) {
             errorLNameLable.isHidden = true
-            FirebaseAPI.shared.updateName(fNameTextField.text, lNameTextField.text) {
-                
+        }
+        else {
+            update = false
+            errorLNameLable.isHidden = false
+        }
+        
+        if(update) {
+            FirebaseAPI.shared.updateName(firstName: fNameTextField.text!, lastName: lNameTextField.text!) {
+                    error in
+                    if let error = error {
+                        print(error)
+                }
             }
         }
-        if(emailTextField.txtFieldsValidation(type: .email) == false) {
+        
+        //update email
+        if(!emailTextField.txtFieldsValidation(type: .email)) {
             errorEmailLable.isHidden = false
         }
         else {
             errorEmailLable.isHidden = true
-            FirebaseAPI.shared.updateEmail(emailTextField.text) {
-                
+            FirebaseAPI.shared.updateEmail(to: emailTextField.text!) {
+                error in
+                if let error = error {
+                    print(error)
+                }
             }
         }
-        if(pwTextField.txtFieldsValidation(type: .password) == false) {
+        
+        //update password
+        if(!pwTextField.txtFieldsValidation(type: .password)) {
             errorPWLable.isHidden = false
         }
         else {
             errorPWLable.isHidden = true
-            FirebaseAPI.shared.updatePassword(pwTextField.text) {
-                
+            FirebaseAPI.shared.updatePassword(to: pwTextField.text!) {
+                error in
+                if let error = error {
+                    print(error)
+                }
             }
         }
     }
@@ -91,17 +118,17 @@ extension UITextField {
     }
     
     func txtFieldsValidation(type: txtFieldValidate)->Bool {
-        switch txtFieldValidate {
-        case txtFieldValidate.name:
-            return nameValidator();
-        case txtFieldValidate.email:
+        switch type {
+        case .name:
+            return nameValidation();
+        case .email:
             return emailValidation()
-        case txtFieldValidate.password:
+        case .password:
             return passwordValidation();
         }
     }
     
-    private func nameValidator()->Bool {
+    private func nameValidation()->Bool {
         if let text = text {
             if(text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty) {
                 return false
@@ -109,27 +136,22 @@ extension UITextField {
             else if(text.count > 16) {
                 return false
             }
-            else {
-                return true
-            }
+            return true
         }
+        return false
     }
     
     private func emailValidation()->Bool {
         if let text = text, text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty {
                 return false
         }
-        else {
-            return true
-        }
+        return true
     }
     
     private func passwordValidation()->Bool {
         if let text = text, text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty {
                 return false
         }
-        else {
-            return true
-        }
+        return true
     }
 }
