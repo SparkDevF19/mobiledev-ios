@@ -14,6 +14,8 @@
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
 		07CDA4DD23806421004B2798 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDA4DC23806421004B2798 /* EventModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
+
+		2A1C04A8E1F8AE260D56752E /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */; };
 		737AB59E2383154C004E438B /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59C2383154C004E438B /* Favorites.storyboard */; };
 		737AB5A023831BD2004E438B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59F23831BD2004E438B /* Home.storyboard */; };
 		737AB5A323831BFB004E438B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A223831BFB004E438B /* Search.storyboard */; };
@@ -50,6 +52,8 @@
 		7D41AA842380B9BB004FD42D /* openssl_grpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D41AA832380B9BB004FD42D /* openssl_grpc.framework */; };
 		7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D882769237DA21F00742D60 /* SignUpViewController.swift */; };
 		7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88276B237DA2D700742D60 /* LoginViewController.swift */; };
+		BEBCCBEAE6B0071C600BDC76 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */; };
+		E10A8CEEE23B477D2730E538 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,8 @@
 		079DE3D4237DCD1F000E8C60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		07CDA4DC23806421004B2798 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
+		46CB47F82BF8154E4FC5099B /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737AB59D2383154C004E438B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ticketing/Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
 		737AB59F23831BD2004E438B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		737AB5A223831BFB004E438B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
@@ -120,6 +126,13 @@
 		7D41AA832380B9BB004FD42D /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D882769237DA21F00742D60 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7D88276B237DA2D700742D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		881DCAB91D169318653C564D /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93885D0DEF31AD26FCDE69A /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
+		B0DBD89953A4997784A61098 /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43EC754A33CBB28F78ED7D0 /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEE79679CFED0F78C17633B1 /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +157,7 @@
 				7D41AA802380B9BB004FD42D /* leveldb.framework in Frameworks */,
 				7D41AA822380B9BB004FD42D /* nanopb.framework in Frameworks */,
 				7D41AA842380B9BB004FD42D /* openssl_grpc.framework in Frameworks */,
+				E10A8CEEE23B477D2730E538 /* Pods_Ticketing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBCCBEAE6B0071C600BDC76 /* Pods_TicketingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1C04A8E1F8AE260D56752E /* Pods_Ticketing_TicketingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +212,12 @@
 		313229F91FD0EA01A0AA0A57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				FEE79679CFED0F78C17633B1 /* Pods-Ticketing.debug.xcconfig */,
+				A93885D0DEF31AD26FCDE69A /* Pods-Ticketing.release.xcconfig */,
+				46CB47F82BF8154E4FC5099B /* Pods-Ticketing-TicketingUITests.debug.xcconfig */,
+				B0DBD89953A4997784A61098 /* Pods-Ticketing-TicketingUITests.release.xcconfig */,
+				881DCAB91D169318653C564D /* Pods-TicketingTests.debug.xcconfig */,
+				F43EC754A33CBB28F78ED7D0 /* Pods-TicketingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -304,6 +326,9 @@
 				7D41AA7F2380B9BB004FD42D /* leveldb.framework */,
 				7D41AA812380B9BB004FD42D /* nanopb.framework */,
 				7D41AA832380B9BB004FD42D /* openssl_grpc.framework */,
+				CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */,
+				69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */,
+				96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F58233A8B49003309AC /* Build configuration list for PBXNativeTarget "Ticketing" */;
 			buildPhases = (
+				44ACB35A6FD1838F54D1D713 /* [CP] Check Pods Manifest.lock */,
 				79BA6F2C233A8B40003309AC /* Sources */,
 				79BA6F2D233A8B40003309AC /* Frameworks */,
 				79BA6F2E233A8B40003309AC /* Resources */,
+				399CDCCB3D2440F425095E32 /* [CP] Embed Pods Frameworks */,
+				28786E6C545456DFEC257560 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,6 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F5B233A8B49003309AC /* Build configuration list for PBXNativeTarget "TicketingTests" */;
 			buildPhases = (
+				F0991215E97EF0AF7D9A2EF4 /* [CP] Check Pods Manifest.lock */,
 				79BA6F40233A8B49003309AC /* Sources */,
 				79BA6F41233A8B49003309AC /* Frameworks */,
 				79BA6F42233A8B49003309AC /* Resources */,
@@ -350,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F5E233A8B49003309AC /* Build configuration list for PBXNativeTarget "TicketingUITests" */;
 			buildPhases = (
+				BD2B449A5074F7D13CA2F83F /* [CP] Check Pods Manifest.lock */,
 				79BA6F4B233A8B49003309AC /* Sources */,
 				79BA6F4C233A8B49003309AC /* Frameworks */,
 				79BA6F4D233A8B49003309AC /* Resources */,
+				869C6B8063C52F81902F843D /* [CP] Embed Pods Frameworks */,
+				F2BBBD11D0D0EA0E885264D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -442,6 +474,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28786E6C545456DFEC257560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		399CDCCB3D2440F425095E32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44ACB35A6FD1838F54D1D713 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ticketing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		869C6B8063C52F81902F843D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2B449A5074F7D13CA2F83F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ticketing-TicketingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0991215E97EF0AF7D9A2EF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2BBBD11D0D0EA0E885264D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79BA6F2C233A8B40003309AC /* Sources */ = {
@@ -641,6 +810,7 @@
 		};
 		79BA6F59233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE79679CFED0F78C17633B1 /* Pods-Ticketing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +829,7 @@
 		};
 		79BA6F5A233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93885D0DEF31AD26FCDE69A /* Pods-Ticketing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -677,6 +848,7 @@
 		};
 		79BA6F5C233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881DCAB91D169318653C564D /* Pods-TicketingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,6 +870,7 @@
 		};
 		79BA6F5D233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43EC754A33CBB28F78ED7D0 /* Pods-TicketingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -719,6 +892,7 @@
 		};
 		79BA6F5F233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CB47F82BF8154E4FC5099B /* Pods-Ticketing-TicketingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -739,6 +913,7 @@
 		};
 		79BA6F60233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DBD89953A4997784A61098 /* Pods-Ticketing-TicketingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
