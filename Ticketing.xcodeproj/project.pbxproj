@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
-		79BA6F36233A8B40003309AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F35233A8B40003309AC /* ViewController.swift */; };
 		79BA6F39233A8B40003309AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Main.storyboard */; };
 		79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3A233A8B48003309AC /* Assets.xcassets */; };
 		79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
+		B00A234C234CC4B500AA93E9 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A234B234CC4B500AA93E9 /* UIButtonExtension.swift */; };
+		B034314423831ED800DF33BB /* TicketDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034314223831ED800DF33BB /* TicketDetailTableViewCell.swift */; };
+		B034314523831ED800DF33BB /* TicketDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B034314323831ED800DF33BB /* TicketDetailTableViewCell.xib */; };
+		B034314823831F8800DF33BB /* TicketVenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034314623831F8800DF33BB /* TicketVenueTableViewCell.swift */; };
+		B034314923831F8800DF33BB /* TicketVenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B034314723831F8800DF33BB /* TicketVenueTableViewCell.xib */; };
+		B034314C238441D900DF33BB /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034314A238441D900DF33BB /* ImageTableViewCell.swift */; };
+		B034314D238441D900DF33BB /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B034314B238441D900DF33BB /* ImageTableViewCell.xib */; };
+		B03431502384423D00DF33BB /* qrcodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034314E2384423D00DF33BB /* qrcodeTableViewCell.swift */; };
+		B03431512384423D00DF33BB /* qrcodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B034314F2384423D00DF33BB /* qrcodeTableViewCell.xib */; };
+		B0343153238442DA00DF33BB /* TicketDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0343152238442DA00DF33BB /* TicketDetailTableViewController.swift */; };
+		B04746EE2368A5120064C7FA /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04746ED2368A5120064C7FA /* Ticket.swift */; };
+		B06D6663235F445200450356 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D6661235F445200450356 /* TicketTableViewCell.swift */; };
+		B06D6664235F445200450356 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06D6662235F445200450356 /* TicketTableViewCell.xib */; };
+		B06D6666235F45CF00450356 /* TicketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D6665235F45CF00450356 /* TicketsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,6 @@
 /* Begin PBXFileReference section */
 		79BA6F30233A8B40003309AC /* Ticketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79BA6F35233A8B40003309AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79BA6F38233A8B40003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79BA6F3A233A8B48003309AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BA6F3D233A8B48003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,20 @@
 		79BA6F4F233A8B49003309AC /* TicketingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F53233A8B49003309AC /* TicketingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingUITests.swift; sourceTree = "<group>"; };
 		79BA6F55233A8B49003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00A234B234CC4B500AA93E9 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		B034314223831ED800DF33BB /* TicketDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B034314323831ED800DF33BB /* TicketDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B034314623831F8800DF33BB /* TicketVenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVenueTableViewCell.swift; sourceTree = "<group>"; };
+		B034314723831F8800DF33BB /* TicketVenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketVenueTableViewCell.xib; sourceTree = "<group>"; };
+		B034314A238441D900DF33BB /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		B034314B238441D900DF33BB /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		B034314E2384423D00DF33BB /* qrcodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrcodeTableViewCell.swift; sourceTree = "<group>"; };
+		B034314F2384423D00DF33BB /* qrcodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = qrcodeTableViewCell.xib; sourceTree = "<group>"; };
+		B0343152238442DA00DF33BB /* TicketDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailTableViewController.swift; sourceTree = "<group>"; };
+		B04746ED2368A5120064C7FA /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		B06D6661235F445200450356 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		B06D6662235F445200450356 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
+		B06D6665235F45CF00450356 /* TicketsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +123,13 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
+				B0983412234F75510088D051 /* models */,
+				B00A234F234F720B00AA93E9 /* cells */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
-				79BA6F35233A8B40003309AC /* ViewController.swift */,
 				79BA6F37233A8B40003309AC /* Main.storyboard */,
+				B06D6665235F45CF00450356 /* TicketsTableViewController.swift */,
+				B0343152238442DA00DF33BB /* TicketDetailTableViewController.swift */,
+				B00A234B234CC4B500AA93E9 /* UIButtonExtension.swift */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
@@ -123,6 +153,31 @@
 				79BA6F55233A8B49003309AC /* Info.plist */,
 			);
 			path = TicketingUITests;
+			sourceTree = "<group>";
+		};
+		B00A234F234F720B00AA93E9 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				B06D6661235F445200450356 /* TicketTableViewCell.swift */,
+				B06D6662235F445200450356 /* TicketTableViewCell.xib */,
+				B034314223831ED800DF33BB /* TicketDetailTableViewCell.swift */,
+				B034314323831ED800DF33BB /* TicketDetailTableViewCell.xib */,
+				B034314623831F8800DF33BB /* TicketVenueTableViewCell.swift */,
+				B034314723831F8800DF33BB /* TicketVenueTableViewCell.xib */,
+				B034314A238441D900DF33BB /* ImageTableViewCell.swift */,
+				B034314B238441D900DF33BB /* ImageTableViewCell.xib */,
+				B034314E2384423D00DF33BB /* qrcodeTableViewCell.swift */,
+				B034314F2384423D00DF33BB /* qrcodeTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		B0983412234F75510088D051 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B04746ED2368A5120064C7FA /* Ticket.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +284,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B034314D238441D900DF33BB /* ImageTableViewCell.xib in Resources */,
+				B03431512384423D00DF33BB /* qrcodeTableViewCell.xib in Resources */,
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
+				B06D6664235F445200450356 /* TicketTableViewCell.xib in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
+				B034314923831F8800DF33BB /* TicketVenueTableViewCell.xib in Resources */,
+				B034314523831ED800DF33BB /* TicketDetailTableViewCell.xib in Resources */,
 				79BA6F39233A8B40003309AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BA6F36233A8B40003309AC /* ViewController.swift in Sources */,
+				B034314423831ED800DF33BB /* TicketDetailTableViewCell.swift in Sources */,
+				B03431502384423D00DF33BB /* qrcodeTableViewCell.swift in Sources */,
+				B034314C238441D900DF33BB /* ImageTableViewCell.swift in Sources */,
+				B06D6666235F45CF00450356 /* TicketsTableViewController.swift in Sources */,
+				B06D6663235F445200450356 /* TicketTableViewCell.swift in Sources */,
+				B04746EE2368A5120064C7FA /* Ticket.swift in Sources */,
+				B034314823831F8800DF33BB /* TicketVenueTableViewCell.swift in Sources */,
+				B00A234C234CC4B500AA93E9 /* UIButtonExtension.swift in Sources */,
+				B0343153238442DA00DF33BB /* TicketDetailTableViewController.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
