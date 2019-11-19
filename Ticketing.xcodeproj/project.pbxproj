@@ -12,6 +12,7 @@
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
+		07CDA4DD23806421004B2798 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDA4DC23806421004B2798 /* EventModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
 		737AB59E2383154C004E438B /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59C2383154C004E438B /* Favorites.storyboard */; };
 		737AB5A023831BD2004E438B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59F23831BD2004E438B /* Home.storyboard */; };
@@ -75,6 +76,7 @@
 		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
 		076B941A236CC9AD003AE1ED /* seatMap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seatMap.gif; sourceTree = "<group>"; };
 		079DE3D4237DCD1F000E8C60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		07CDA4DC23806421004B2798 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
 		737AB59D2383154C004E438B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ticketing/Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
 		737AB59F23831BD2004E438B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				0729D8A32375682400800EC2 /* FirebaseAPI.swift */,
 				079DE3D4237DCD1F000E8C60 /* UserModel.swift */,
 				07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */,
+				07CDA4DC23806421004B2798 /* EventModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */,
 				7D41AA62237F94A1004FD42D /* StyleFields.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
+				07CDA4DD23806421004B2798 /* EventModel.swift in Sources */,
 				079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */,
 				0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */,
 				7D41AA60237F9230004FD42D /* ResetPasswordViewController.swift in Sources */,
