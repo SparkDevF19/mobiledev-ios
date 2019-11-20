@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,18 @@
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
+		07CDA4DD23806421004B2798 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDA4DC23806421004B2798 /* EventModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
+
+		2A1C04A8E1F8AE260D56752E /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */; };
+		737AB59E2383154C004E438B /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59C2383154C004E438B /* Favorites.storyboard */; };
+		737AB5A023831BD2004E438B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59F23831BD2004E438B /* Home.storyboard */; };
+		737AB5A323831BFB004E438B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A223831BFB004E438B /* Search.storyboard */; };
+		737AB5A523831C06004E438B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A423831C06004E438B /* Profile.storyboard */; };
+		737AB5A72383314A004E438B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A62383314A004E438B /* Main.storyboard */; };
+		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
+		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
+		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
 		35CE7948957E8E76B03A1F58 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D83177BC3755D7BA93DECF /* Pods_Ticketing.framework */; };
 		5C1B90CB6CEF2D914D971E41 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21B1F81C885E1AB17C0A0AF /* Pods_TicketingTests.framework */; };
 		6D693917F49349F3200F01A1 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2996B5B50479E19CEAEC9ED /* Pods_Ticketing_TicketingUITests.framework */; };
@@ -53,6 +64,8 @@
 		7D41AA842380B9BB004FD42D /* openssl_grpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D41AA832380B9BB004FD42D /* openssl_grpc.framework */; };
 		7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D882769237DA21F00742D60 /* SignUpViewController.swift */; };
 		7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88276B237DA2D700742D60 /* LoginViewController.swift */; };
+		BEBCCBEAE6B0071C600BDC76 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */; };
+		E10A8CEEE23B477D2730E538 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +92,18 @@
 		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
 		076B941A236CC9AD003AE1ED /* seatMap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seatMap.gif; sourceTree = "<group>"; };
 		079DE3D4237DCD1F000E8C60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		07CDA4DC23806421004B2798 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
+		46CB47F82BF8154E4FC5099B /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737AB59D2383154C004E438B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ticketing/Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
+		737AB59F23831BD2004E438B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		737AB5A223831BFB004E438B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		737AB5A423831C06004E438B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		737AB5A62383314A004E438B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
 		19D5BFAE74A31A579D5EE28E /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		29E314BBAB2D91DF96E52BCB /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B0E9EB856D333D010D87536 /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +152,13 @@
 		7D41AA832380B9BB004FD42D /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D882769237DA21F00742D60 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7D88276B237DA2D700742D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		881DCAB91D169318653C564D /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93885D0DEF31AD26FCDE69A /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
+		B0DBD89953A4997784A61098 /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43EC754A33CBB28F78ED7D0 /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEE79679CFED0F78C17633B1 /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
 		B2996B5B50479E19CEAEC9ED /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D83177BC3755D7BA93DECF /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8085B28BB4C7A36DB31134A /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +216,7 @@
 				0729D8A32375682400800EC2 /* FirebaseAPI.swift */,
 				079DE3D4237DCD1F000E8C60 /* UserModel.swift */,
 				07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */,
+				07CDA4DC23806421004B2798 /* EventModel.swift */,
 				79503328237A6F06005C4F8C /* Event.swift */,
 			);
 			path = Models;
@@ -219,6 +251,18 @@
 				C8085B28BB4C7A36DB31134A /* Pods-TicketingTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		737AB5A123831BE2004E438B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				737AB59C2383154C004E438B /* Favorites.storyboard */,
+				737AB59F23831BD2004E438B /* Home.storyboard */,
+				737AB5A223831BFB004E438B /* Search.storyboard */,
+				737AB5A423831C06004E438B /* Profile.storyboard */,
+				737AB5A62383314A004E438B /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		733D18A023560177008FF9A1 /* HomeScreen */ = {
@@ -271,10 +315,16 @@
 			isa = PBXGroup;
 			children = (
 				7D8B9FEF237F84CA000186F9 /* Onboarding */,
+				79BA6F37233A8B40003309AC /* Onboarding.storyboard */,
+				737AB5A123831BE2004E438B /* Storyboards */,
 				0729D8A02375609000800EC2 /* Models */,
 				79B9E72423744F28006EB931 /* Networking */,
 				733D18A023560177008FF9A1 /* HomeScreen */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
+				79BA6F35233A8B40003309AC /* ViewController.swift */,
+				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
+				73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */,
+				73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
@@ -452,9 +502,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
+				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
+				737AB5A523831C06004E438B /* Profile.storyboard in Resources */,
+				737AB5A72383314A004E438B /* Main.storyboard in Resources */,
 				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
 				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
+				737AB5A323831BFB004E438B /* Search.storyboard in Resources */,
+				737AB59E2383154C004E438B /* Favorites.storyboard in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
+				79BA6F39233A8B40003309AC /* Onboarding.storyboard in Resources */,
+				79BA6F39233A8B40003309AC /* Onboarding.storyboard in Resources */,
 				79BA6F39233A8B40003309AC /* Home.storyboard in Resources */,
 				731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */,
 				79BA6F39233A8B40003309AC /* Home.storyboard in Resources */,
@@ -622,9 +679,12 @@
 				7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */,
 				7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */,
 				076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */,
+				73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */,
+				73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */,
 				07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */,
 				7D41AA62237F94A1004FD42D /* StyleFields.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
+				07CDA4DD23806421004B2798 /* EventModel.swift in Sources */,
 				079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */,
 				0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */,
 				7D41AA60237F9230004FD42D /* ResetPasswordViewController.swift in Sources */,
@@ -815,7 +875,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ticketing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -834,7 +894,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ticketing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
