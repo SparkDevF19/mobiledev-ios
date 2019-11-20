@@ -11,6 +11,8 @@ target 'Ticketing' do
   pod 'FirebaseFirestoreSwift'
   pod 'GoogleSignIn'
   pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'TicketingTests' do
     inherit! :search_paths
