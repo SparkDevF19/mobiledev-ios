@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class HomeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var eventImage: UIImageView!
 
