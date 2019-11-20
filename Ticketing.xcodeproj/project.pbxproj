@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,22 +14,17 @@
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
 		07CDA4DD23806421004B2798 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDA4DC23806421004B2798 /* EventModel.swift */; };
 		07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */; };
-
-		2A1C04A8E1F8AE260D56752E /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */; };
-		737AB59E2383154C004E438B /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59C2383154C004E438B /* Favorites.storyboard */; };
-		737AB5A023831BD2004E438B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB59F23831BD2004E438B /* Home.storyboard */; };
+		6A899A933EFD69D36D9345C0 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC319F510749117CF62A87A /* Pods_TicketingTests.framework */; };
+		731B2ED42368790800C7A400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED32368790800C7A400 /* HomeViewController.swift */; };
+		731B2ED92368825E00C7A400 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */; };
+		731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */; };
+		737AB59E2383154C004E438B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		737AB5A323831BFB004E438B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A223831BFB004E438B /* Search.storyboard */; };
 		737AB5A523831C06004E438B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A423831C06004E438B /* Profile.storyboard */; };
 		737AB5A72383314A004E438B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A62383314A004E438B /* Main.storyboard */; };
 		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
 		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
 		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
-		35CE7948957E8E76B03A1F58 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D83177BC3755D7BA93DECF /* Pods_Ticketing.framework */; };
-		5C1B90CB6CEF2D914D971E41 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21B1F81C885E1AB17C0A0AF /* Pods_TicketingTests.framework */; };
-		6D693917F49349F3200F01A1 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2996B5B50479E19CEAEC9ED /* Pods_Ticketing_TicketingUITests.framework */; };
-		731B2ED42368790800C7A400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED32368790800C7A400 /* HomeViewController.swift */; };
-		731B2ED92368825E00C7A400 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */; };
-		731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */; };
 		7950331C237A5E58005C4F8C /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331B237A5E58005C4F8C /* AppSecrets.swift */; };
 		7950331E237A5F65005C4F8C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331D237A5F65005C4F8C /* APIConfiguration.swift */; };
 		79503324237A6A24005C4F8C /* TicketmasterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79503323237A6A24005C4F8C /* TicketmasterClient.swift */; };
@@ -38,9 +33,7 @@
 		79B9E72623744F57006EB931 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9E72523744F57006EB931 /* APIRouter.swift */; };
 		79B9E72A2374B61F006EB931 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9E7292374B61F006EB931 /* URLConstants.swift */; };
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
-		79BA6F39233A8B40003309AC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Home.storyboard */; };
 		79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3A233A8B48003309AC /* Assets.xcassets */; };
-		79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
 		7D41AA60237F9230004FD42D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D41AA5F237F9230004FD42D /* ResetPasswordViewController.swift */; };
@@ -64,8 +57,8 @@
 		7D41AA842380B9BB004FD42D /* openssl_grpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D41AA832380B9BB004FD42D /* openssl_grpc.framework */; };
 		7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D882769237DA21F00742D60 /* SignUpViewController.swift */; };
 		7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88276B237DA2D700742D60 /* LoginViewController.swift */; };
-		BEBCCBEAE6B0071C600BDC76 /* Pods_TicketingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */; };
-		E10A8CEEE23B477D2730E538 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */; };
+		DD63A82EC3F56CD79B0A5E48 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766A53793BA824E22E02613B /* Pods_Ticketing.framework */; };
+		EA6FBCACED8403DEEFFEA3A9 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16DAECB0D040F0A6E53EC29 /* Pods_Ticketing_TicketingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,24 +87,18 @@
 		079DE3D4237DCD1F000E8C60 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		07CDA4DC23806421004B2798 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		07DD38B2237DE08C005A6F72 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
-		46CB47F82BF8154E4FC5099B /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		69533B694C129432EDDAE20D /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		737AB59D2383154C004E438B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Ticketing/Base.lproj/Favorites.storyboard; sourceTree = "<group>"; };
+		3D12176E461DF78C28470DD8 /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		731B2ED32368790800C7A400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewCell.swift; path = Data/HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeCollectionViewCell.xib; path = Data/HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		737AB59F23831BD2004E438B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		737AB5A223831BFB004E438B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		737AB5A423831C06004E438B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		737AB5A62383314A004E438B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
-		19D5BFAE74A31A579D5EE28E /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		29E314BBAB2D91DF96E52BCB /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4B0E9EB856D333D010D87536 /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
-		4D995E7DC86E36412E8DD7C1 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		602DDC75CD5140683D4D673D /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
-		731B2ED32368790800C7A400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewCell.swift; path = Data/HomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeCollectionViewCell.xib; path = Data/HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavoritesTableViewCell.xib; path = "../New Group/FavoritesTableViewCell.xib"; sourceTree = "<group>"; };
+		766A53793BA824E22E02613B /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7950331B237A5E58005C4F8C /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		7950331D237A5F65005C4F8C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		79503323237A6A24005C4F8C /* TicketmasterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterClient.swift; sourceTree = "<group>"; };
@@ -121,9 +108,7 @@
 		79B9E7292374B61F006EB931 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		79BA6F30233A8B40003309AC /* Ticketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79BA6F38233A8B40003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		79BA6F3A233A8B48003309AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79BA6F3D233A8B48003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BA6F3F233A8B48003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BA6F44233A8B49003309AC /* TicketingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F48233A8B49003309AC /* TicketingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingTests.swift; sourceTree = "<group>"; };
@@ -131,6 +116,7 @@
 		79BA6F4F233A8B49003309AC /* TicketingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F53233A8B49003309AC /* TicketingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingUITests.swift; sourceTree = "<group>"; };
 		79BA6F55233A8B49003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7058A6C0A11327EDE5AC0A /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
 		7D41AA5F237F9230004FD42D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		7D41AA61237F94A1004FD42D /* StyleFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleFields.swift; sourceTree = "<group>"; };
 		7D41AA632380B9BA004FD42D /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,17 +138,12 @@
 		7D41AA832380B9BB004FD42D /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D882769237DA21F00742D60 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7D88276B237DA2D700742D60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		881DCAB91D169318653C564D /* Pods-TicketingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.debug.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		96FE82B47FB1388CC33E6DD8 /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93885D0DEF31AD26FCDE69A /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
-		B0DBD89953A4997784A61098 /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CF120991D849C48843D6ACA4 /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F43EC754A33CBB28F78ED7D0 /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
-		FEE79679CFED0F78C17633B1 /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
-		B2996B5B50479E19CEAEC9ED /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3D83177BC3755D7BA93DECF /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8085B28BB4C7A36DB31134A /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
-		E21B1F81C885E1AB17C0A0AF /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC319F510749117CF62A87A /* Pods_TicketingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E5BDF583A850D15928C5F8 /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90071BA788DADF87234021C0 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92F1B17BBD9F8D0B014CA2DB /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
+		F16DAECB0D040F0A6E53EC29 /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF6D2FA1EE248EBBDF2C2F /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +168,7 @@
 				7D41AA802380B9BB004FD42D /* leveldb.framework in Frameworks */,
 				7D41AA822380B9BB004FD42D /* nanopb.framework in Frameworks */,
 				7D41AA842380B9BB004FD42D /* openssl_grpc.framework in Frameworks */,
-				35CE7948957E8E76B03A1F58 /* Pods_Ticketing.framework in Frameworks */,
+				DD63A82EC3F56CD79B0A5E48 /* Pods_Ticketing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1B90CB6CEF2D914D971E41 /* Pods_TicketingTests.framework in Frameworks */,
+				6A899A933EFD69D36D9345C0 /* Pods_TicketingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D693917F49349F3200F01A1 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */,
+				EA6FBCACED8403DEEFFEA3A9 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,20 +224,29 @@
 		313229F91FD0EA01A0AA0A57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				602DDC75CD5140683D4D673D /* Pods-Ticketing.debug.xcconfig */,
-				4B0E9EB856D333D010D87536 /* Pods-Ticketing.release.xcconfig */,
-				4D995E7DC86E36412E8DD7C1 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */,
-				29E314BBAB2D91DF96E52BCB /* Pods-Ticketing-TicketingUITests.release.xcconfig */,
-				19D5BFAE74A31A579D5EE28E /* Pods-TicketingTests.debug.xcconfig */,
-				C8085B28BB4C7A36DB31134A /* Pods-TicketingTests.release.xcconfig */,
+				FAEF6D2FA1EE248EBBDF2C2F /* Pods-Ticketing.debug.xcconfig */,
+				7A7058A6C0A11327EDE5AC0A /* Pods-Ticketing.release.xcconfig */,
+				90071BA788DADF87234021C0 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */,
+				83E5BDF583A850D15928C5F8 /* Pods-Ticketing-TicketingUITests.release.xcconfig */,
+				3D12176E461DF78C28470DD8 /* Pods-TicketingTests.debug.xcconfig */,
+				92F1B17BBD9F8D0B014CA2DB /* Pods-TicketingTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		733D18A023560177008FF9A1 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				731B2ED32368790800C7A400 /* HomeViewController.swift */,
+				731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */,
+				731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 		737AB5A123831BE2004E438B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				737AB59C2383154C004E438B /* Favorites.storyboard */,
 				737AB59F23831BD2004E438B /* Home.storyboard */,
 				737AB5A223831BFB004E438B /* Search.storyboard */,
 				737AB5A423831C06004E438B /* Profile.storyboard */,
@@ -265,15 +255,26 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		733D18A023560177008FF9A1 /* HomeScreen */ = {
+		794876E52385F01300496ED0 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				79BA6F37233A8B40003309AC /* Home.storyboard */,
-				731B2ED32368790800C7A400 /* HomeViewController.swift */,
-				731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */,
-				731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */,
+				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
+				73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */,
+				73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */,
 			);
-			path = HomeScreen;
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		794876E62385F07200496ED0 /* ViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				076B9417236B19CE003AE1ED /* Purchasing */,
+				794876E52385F01300496ED0 /* Favorites */,
+				7D8B9FEF237F84CA000186F9 /* Onboarding */,
+				737AB5A123831BE2004E438B /* Storyboards */,
+				733D18A023560177008FF9A1 /* HomeScreen */,
+			);
+			path = ViewRelated;
 			sourceTree = "<group>";
 		};
 		79B9E72423744F28006EB931 /* Networking */ = {
@@ -314,22 +315,13 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
-				7D8B9FEF237F84CA000186F9 /* Onboarding */,
-				79BA6F37233A8B40003309AC /* Onboarding.storyboard */,
-				737AB5A123831BE2004E438B /* Storyboards */,
+				794876E62385F07200496ED0 /* ViewRelated */,
 				0729D8A02375609000800EC2 /* Models */,
 				79B9E72423744F28006EB931 /* Networking */,
-				733D18A023560177008FF9A1 /* HomeScreen */,
-				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
-				79BA6F35233A8B40003309AC /* ViewController.swift */,
-				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
-				73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */,
-				73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */,
-				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
-				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
-				79BA6F3F233A8B48003309AC /* Info.plist */,
-				076B9417236B19CE003AE1ED /* Purchasing */,
 				0769FD6C2368D4B000B367EC /* Firebase */,
+				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
+				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
+				79BA6F3F233A8B48003309AC /* Info.plist */,
 			);
 			path = Ticketing;
 			sourceTree = "<group>";
@@ -383,9 +375,9 @@
 				7D41AA7F2380B9BB004FD42D /* leveldb.framework */,
 				7D41AA812380B9BB004FD42D /* nanopb.framework */,
 				7D41AA832380B9BB004FD42D /* openssl_grpc.framework */,
-				B3D83177BC3755D7BA93DECF /* Pods_Ticketing.framework */,
-				B2996B5B50479E19CEAEC9ED /* Pods_Ticketing_TicketingUITests.framework */,
-				E21B1F81C885E1AB17C0A0AF /* Pods_TicketingTests.framework */,
+				766A53793BA824E22E02613B /* Pods_Ticketing.framework */,
+				F16DAECB0D040F0A6E53EC29 /* Pods_Ticketing_TicketingUITests.framework */,
+				7DC319F510749117CF62A87A /* Pods_TicketingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -397,12 +389,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F58233A8B49003309AC /* Build configuration list for PBXNativeTarget "Ticketing" */;
 			buildPhases = (
-				3F9DD051152FF038361C109E /* [CP] Check Pods Manifest.lock */,
+				0414B8760E8B305FEC7C6673 /* [CP] Check Pods Manifest.lock */,
 				79BA6F2C233A8B40003309AC /* Sources */,
 				79BA6F2D233A8B40003309AC /* Frameworks */,
 				79BA6F2E233A8B40003309AC /* Resources */,
-				604673CD60AD985BA91DAE06 /* [CP] Embed Pods Frameworks */,
-				9E595ABD837BB0EAABB710B7 /* [CP] Copy Pods Resources */,
+				166160080F76C4779A79F4ED /* [CP] Embed Pods Frameworks */,
+				C2469442B2BF4E2C2CFF2268 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,7 +409,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F5B233A8B49003309AC /* Build configuration list for PBXNativeTarget "TicketingTests" */;
 			buildPhases = (
-				B6EB46715E603A10E6BC81ED /* [CP] Check Pods Manifest.lock */,
+				D32B53A552E4A792F186A75E /* [CP] Check Pods Manifest.lock */,
 				79BA6F40233A8B49003309AC /* Sources */,
 				79BA6F41233A8B49003309AC /* Frameworks */,
 				79BA6F42233A8B49003309AC /* Resources */,
@@ -436,12 +428,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79BA6F5E233A8B49003309AC /* Build configuration list for PBXNativeTarget "TicketingUITests" */;
 			buildPhases = (
-				A1F3AB8D9AABF2CE0498E4A3 /* [CP] Check Pods Manifest.lock */,
+				251402B7862674A65E5109D6 /* [CP] Check Pods Manifest.lock */,
 				79BA6F4B233A8B49003309AC /* Sources */,
 				79BA6F4C233A8B49003309AC /* Frameworks */,
 				79BA6F4D233A8B49003309AC /* Resources */,
-				0868A0B0585A1667C05F2B57 /* [CP] Embed Pods Frameworks */,
-				CDC9C447DA55AEDA960BB13C /* [CP] Copy Pods Resources */,
+				3ED2829D1F483C0B7C0D3228 /* [CP] Embed Pods Frameworks */,
+				BA7BB4A08760A740F1D32414 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,20 +493,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
 				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
 				737AB5A523831C06004E438B /* Profile.storyboard in Resources */,
 				737AB5A72383314A004E438B /* Main.storyboard in Resources */,
 				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
 				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
 				737AB5A323831BFB004E438B /* Search.storyboard in Resources */,
-				737AB59E2383154C004E438B /* Favorites.storyboard in Resources */,
+				737AB59E2383154C004E438B /* (null) in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
-				79BA6F39233A8B40003309AC /* Onboarding.storyboard in Resources */,
-				79BA6F39233A8B40003309AC /* Onboarding.storyboard in Resources */,
-				79BA6F39233A8B40003309AC /* Home.storyboard in Resources */,
 				731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */,
-				79BA6F39233A8B40003309AC /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,24 +522,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0868A0B0585A1667C05F2B57 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F9DD051152FF038361C109E /* [CP] Check Pods Manifest.lock */ = {
+		0414B8760E8B305FEC7C6673 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,7 +544,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		604673CD60AD985BA91DAE06 /* [CP] Embed Pods Frameworks */ = {
+		166160080F76C4779A79F4ED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -591,24 +561,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E595ABD837BB0EAABB710B7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1F3AB8D9AABF2CE0498E4A3 /* [CP] Check Pods Manifest.lock */ = {
+		251402B7862674A65E5109D6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -630,7 +583,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B6EB46715E603A10E6BC81ED /* [CP] Check Pods Manifest.lock */ = {
+		3ED2829D1F483C0B7C0D3228 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7BB4A08760A740F1D32414 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2469442B2BF4E2C2CFF2268 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing/Pods-Ticketing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32B53A552E4A792F186A75E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -650,23 +654,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDC9C447DA55AEDA960BB13C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -732,25 +719,6 @@
 			targetProxy = 79BA6F50233A8B49003309AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		79BA6F37233A8B40003309AC /* Home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79BA6F38233A8B40003309AC /* Base */,
-			);
-			name = Home.storyboard;
-			sourceTree = "<group>";
-		};
-		79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79BA6F3D233A8B48003309AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		79BA6F56233A8B49003309AC /* Debug */ = {
@@ -871,7 +839,7 @@
 		};
 		79BA6F59233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 602DDC75CD5140683D4D673D /* Pods-Ticketing.debug.xcconfig */;
+			baseConfigurationReference = FAEF6D2FA1EE248EBBDF2C2F /* Pods-Ticketing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -890,7 +858,7 @@
 		};
 		79BA6F5A233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0E9EB856D333D010D87536 /* Pods-Ticketing.release.xcconfig */;
+			baseConfigurationReference = 7A7058A6C0A11327EDE5AC0A /* Pods-Ticketing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -909,7 +877,7 @@
 		};
 		79BA6F5C233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19D5BFAE74A31A579D5EE28E /* Pods-TicketingTests.debug.xcconfig */;
+			baseConfigurationReference = 3D12176E461DF78C28470DD8 /* Pods-TicketingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -931,7 +899,7 @@
 		};
 		79BA6F5D233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8085B28BB4C7A36DB31134A /* Pods-TicketingTests.release.xcconfig */;
+			baseConfigurationReference = 92F1B17BBD9F8D0B014CA2DB /* Pods-TicketingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -953,7 +921,7 @@
 		};
 		79BA6F5F233A8B49003309AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D995E7DC86E36412E8DD7C1 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */;
+			baseConfigurationReference = 90071BA788DADF87234021C0 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -974,7 +942,7 @@
 		};
 		79BA6F60233A8B49003309AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29E314BBAB2D91DF96E52BCB /* Pods-Ticketing-TicketingUITests.release.xcconfig */;
+			baseConfigurationReference = 83E5BDF583A850D15928C5F8 /* Pods-Ticketing-TicketingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
