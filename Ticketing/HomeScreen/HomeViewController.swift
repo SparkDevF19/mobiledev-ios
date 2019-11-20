@@ -7,28 +7,17 @@
 //
 
 import UIKit
+import CoreLocation
+import Alamofire
 
-struct CustomData {
-       var title: String
-       var image: UIImage
-       var url: String
-   }
-   
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
-   // MARK: Data
+    // MARK: - Constants
     
-    let data = [
-        
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  ),
-        CustomData(title: "Cat", image: #imageLiteral(resourceName: "cat"), url: "google.com/cat"  )
-    ]
+    let locationManager = CLLocationManager()
+    
+    var data = [Suggested]()
+    
     // MARK: Layouts
     
     fileprivate let eventCollectionView: UICollectionView = {
@@ -69,6 +58,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        setupLocationManager()
         
         eventCollectionView.delegate = self
         eventCollectionView.dataSource = self
@@ -129,7 +120,7 @@ class ViewController: UIViewController {
 
 // MARK: ViewController Delegates
 
-extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -158,10 +149,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDa
 
 class CustomCell: UICollectionViewCell {
     
-    var data: CustomData? {
+    var data: Suggested? {
         didSet {
             guard let data = data else {return}
-            bg.image = data.image
+            AF.request(data.image).responseData { responseData in
+                self.bg.image = UIImage(data: responseData.data!)
+            }
         }
     }
     
@@ -191,6 +184,29 @@ class CustomCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+extension HomeViewController: CLLocationManagerDelegate {
+    
+    private func setupLocationManager() {
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let userLoc: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        manager.stopUpdatingLocation()
+        TicketmasterAPI.shared.getSuggested(latitude: userLoc.latitude, longitude: userLoc.longitude) { events in
+            self.data = events
+            self.eventCollectionView.reloadData()
+        }
+    }
 }
 
 

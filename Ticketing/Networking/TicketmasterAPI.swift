@@ -13,7 +13,7 @@ import SwiftyJSON
 class TicketmasterAPI {
     static let shared = TicketmasterAPI()
     
-    static func getSuggested(latitude: Double, longitude: Double, completion: @escaping([Suggested]) -> Void) {
+    public func getSuggested(latitude: Double, longitude: Double, completion: @escaping([Suggested]) -> Void) {
         TicketmasterClient().performRequest(route: .suggestions(lat: latitude, long: longitude)) { results, error in
             if case .failure = error { return }
             
