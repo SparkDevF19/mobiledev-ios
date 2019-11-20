@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
         
+        UINavigationBar.appearance().prefersLargeTitles = true
+        
 //        FirebaseAPI.shared.loginAnonymously { (Error, User) in
 //            if Error != nil {
 //                print(Error!)

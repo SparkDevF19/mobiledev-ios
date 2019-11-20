@@ -78,6 +78,8 @@ class HomeViewController: UIViewController {
     
     func setup(){
         
+        title = "Home"
+        
         view.addSubview(eventCollectionView)
         view.addSubview(upcomingView)
         view.addSubview(pastView)
