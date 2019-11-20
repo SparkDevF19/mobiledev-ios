@@ -70,8 +70,6 @@ enum APIRouter: APIConfiguration {
             }
         }
         
-        print(urlRequest)
-        
         return urlRequest
     }
     
