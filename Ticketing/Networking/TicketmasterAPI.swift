@@ -10,14 +10,27 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+struct Suggested {
+    let id: String
+    let name: String
+    let image: String
+}
+
 final class TicketmasterAPI {
-    static func getSuggested(latitude: Double, longitude: Double) {
+    static func getSuggested(latitude: Double, longitude: Double, completion: @escaping([Suggested]) -> Void) {
         TicketmasterClient().performRequest(route: .suggestions(lat: latitude, long: longitude)) { results, error in
-            guard error == .failure else { return }
+            if case .failure = error { return }
             
+            var resultEvents = [Suggested]()
             if let results = results, results.isEmpty == false {
-                
+                if let events = results["_embedded"]["events"].array {
+                    for event in events {
+                        resultEvents.append(Suggested(id: event["id"].stringValue, name: event["name"].stringValue, image: event["url"].stringValue))
+                    }
+                }
             }
+            
+            completion(resultEvents)
         }
     }
 }

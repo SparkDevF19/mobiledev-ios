@@ -15,17 +15,15 @@ enum NetworkError: Error {
 }
 
 class TicketmasterClient {
-    public func performRequest(route: APIRouter, decoder: JSONDecoder = JSONDecoder(), completion: @escaping ([JSON]?, NetworkError) -> Void) {
+    public func performRequest(route: APIRouter, decoder: JSONDecoder = JSONDecoder(), completion: @escaping (JSON?, NetworkError) -> Void) {
         AF.request(route).responseJSON { response in
             guard let data = response.data else {
-                print(response.data)
                 completion(nil, .failure)
                 return
             }
             
             let json = try? JSON(data: data)
-            print(json)
-            let results = json?.arrayValue
+            let results = json
             guard let empty = results?.isEmpty, empty == false else {
                 completion(nil, .failure)
                 return
