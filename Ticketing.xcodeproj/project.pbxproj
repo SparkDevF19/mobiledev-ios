@@ -24,7 +24,8 @@
 		737AB5A72383314A004E438B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A62383314A004E438B /* Main.storyboard */; };
 		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
 		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
-		73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */; };
+		794876E82385FC5F00496ED0 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794876E72385FC5E00496ED0 /* FavoritesTableViewCell.xib */; };
+		794876EA2386001900496ED0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794876E92386001900496ED0 /* Home.storyboard */; };
 		7950331C237A5E58005C4F8C /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331B237A5E58005C4F8C /* AppSecrets.swift */; };
 		7950331E237A5F65005C4F8C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331D237A5F65005C4F8C /* APIConfiguration.swift */; };
 		79503324237A6A24005C4F8C /* TicketmasterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79503323237A6A24005C4F8C /* TicketmasterClient.swift */; };
@@ -91,14 +92,14 @@
 		731B2ED32368790800C7A400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewCell.swift; path = Data/HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeCollectionViewCell.xib; path = Data/HomeCollectionViewCell.xib; sourceTree = "<group>"; };
-		737AB59F23831BD2004E438B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		737AB5A223831BFB004E438B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		737AB5A423831C06004E438B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		737AB5A62383314A004E438B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FavoritesTableViewCell.xib; path = "../New Group/FavoritesTableViewCell.xib"; sourceTree = "<group>"; };
 		766A53793BA824E22E02613B /* Pods_Ticketing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		794876E72385FC5E00496ED0 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		794876E92386001900496ED0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7950331B237A5E58005C4F8C /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		7950331D237A5F65005C4F8C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		79503323237A6A24005C4F8C /* TicketmasterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterClient.swift; sourceTree = "<group>"; };
@@ -247,10 +248,10 @@
 		737AB5A123831BE2004E438B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				737AB59F23831BD2004E438B /* Home.storyboard */,
 				737AB5A223831BFB004E438B /* Search.storyboard */,
 				737AB5A423831C06004E438B /* Profile.storyboard */,
 				737AB5A62383314A004E438B /* Main.storyboard */,
+				794876E92386001900496ED0 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -258,8 +259,8 @@
 		794876E52385F01300496ED0 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				794876E72385FC5E00496ED0 /* FavoritesTableViewCell.xib */,
 				73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */,
-				73E2CFA6234F7BF60015B3EC /* FavoritesTableViewCell.xib */,
 				73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */,
 			);
 			path = Favorites;
@@ -493,14 +494,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E2CFA7234F7BF60015B3EC /* FavoritesTableViewCell.xib in Resources */,
 				737AB5A523831C06004E438B /* Profile.storyboard in Resources */,
+				794876EA2386001900496ED0 /* Home.storyboard in Resources */,
 				737AB5A72383314A004E438B /* Main.storyboard in Resources */,
 				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
 				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
 				737AB5A323831BFB004E438B /* Search.storyboard in Resources */,
 				737AB59E2383154C004E438B /* (null) in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
+				794876E82385FC5F00496ED0 /* FavoritesTableViewCell.xib in Resources */,
 				731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
