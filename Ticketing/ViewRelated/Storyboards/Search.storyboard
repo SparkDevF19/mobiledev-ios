@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Search-->
         <scene sceneID="vdm-X5-XEo">
             <objects>
                 <tableViewController id="N8k-Bh-SvO" sceneMemberID="viewController">
@@ -30,7 +30,9 @@
                             <outlet property="delegate" destination="N8k-Bh-SvO" id="i6h-50-LZ7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="aFp-b8-heO"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="Ru3-Tc-fbB"/>
+                    <navigationItem key="navigationItem" title="Search" id="aFp-b8-heO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfd-De-UQV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,4 +55,7 @@
             <point key="canvasLocation" x="-542" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search" width="24" height="24"/>
+    </resources>
 </document>

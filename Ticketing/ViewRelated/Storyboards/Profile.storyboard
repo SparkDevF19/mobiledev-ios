@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Profile-->
         <scene sceneID="lvV-db-YME">
             <objects>
                 <tableViewController id="3EJ-9u-akt" sceneMemberID="viewController">
@@ -30,7 +30,9 @@
                             <outlet property="delegate" destination="3EJ-9u-akt" id="83j-rB-B2b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ISd-YX-Eun"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="MDd-ch-8B1"/>
+                    <navigationItem key="navigationItem" title="Profile" id="ISd-YX-Eun"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qv-Om-4WX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,4 +55,7 @@
             <point key="canvasLocation" x="-525" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile" width="24" height="24"/>
+    </resources>
 </document>
