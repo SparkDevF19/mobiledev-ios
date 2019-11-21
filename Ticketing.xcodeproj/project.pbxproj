@@ -239,14 +239,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		733D18A023560177008FF9A1 /* HomeScreen */ = {
+		733D18A023560177008FF9A1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				731B2ED32368790800C7A400 /* HomeViewController.swift */,
 				731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */,
 				731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */,
 			);
-			path = HomeScreen;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		737AB5A123831BE2004E438B /* Storyboards */ = {
@@ -279,7 +279,7 @@
 				794876E52385F01300496ED0 /* Favorites */,
 				7D8B9FEF237F84CA000186F9 /* Onboarding */,
 				737AB5A123831BE2004E438B /* Storyboards */,
-				733D18A023560177008FF9A1 /* HomeScreen */,
+				733D18A023560177008FF9A1 /* Home */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
