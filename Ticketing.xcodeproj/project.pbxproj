@@ -28,6 +28,7 @@
 		794876EA2386001900496ED0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794876E92386001900496ED0 /* Home.storyboard */; };
 		794876EC2386087C00496ED0 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794876EB2386087C00496ED0 /* Favorites.storyboard */; };
 		794876EE23860A4700496ED0 /* Tickets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794876ED23860A4700496ED0 /* Tickets.storyboard */; };
+		794876F12386F62A00496ED0 /* UIFont+PreferredFont&Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794876F02386F62A00496ED0 /* UIFont+PreferredFont&Weight.swift */; };
 		7950331C237A5E58005C4F8C /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331B237A5E58005C4F8C /* AppSecrets.swift */; };
 		7950331E237A5F65005C4F8C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950331D237A5F65005C4F8C /* APIConfiguration.swift */; };
 		79503324237A6A24005C4F8C /* TicketmasterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79503323237A6A24005C4F8C /* TicketmasterClient.swift */; };
@@ -104,6 +105,7 @@
 		794876E92386001900496ED0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		794876EB2386087C00496ED0 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		794876ED23860A4700496ED0 /* Tickets.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tickets.storyboard; sourceTree = "<group>"; };
+		794876F02386F62A00496ED0 /* UIFont+PreferredFont&Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+PreferredFont&Weight.swift"; sourceTree = "<group>"; };
 		7950331B237A5E58005C4F8C /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		7950331D237A5F65005C4F8C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		79503323237A6A24005C4F8C /* TicketmasterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterClient.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		794876E62385F07200496ED0 /* ViewRelated */ = {
 			isa = PBXGroup;
 			children = (
+				794876EF2386F5F900496ED0 /* Extensions */,
 				076B9417236B19CE003AE1ED /* Purchasing */,
 				794876E52385F01300496ED0 /* Favorites */,
 				7D8B9FEF237F84CA000186F9 /* Onboarding */,
@@ -282,6 +285,14 @@
 				733D18A023560177008FF9A1 /* Home */,
 			);
 			path = ViewRelated;
+			sourceTree = "<group>";
+		};
+		794876EF2386F5F900496ED0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				794876F02386F62A00496ED0 /* UIFont+PreferredFont&Weight.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		79B9E72423744F28006EB931 /* Networking */ = {
@@ -689,6 +700,7 @@
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 				731B2ED92368825E00C7A400 /* HomeCollectionViewCell.swift in Sources */,
 				79503329237A6F06005C4F8C /* Event.swift in Sources */,
+				794876F12386F62A00496ED0 /* UIFont+PreferredFont&Weight.swift in Sources */,
 				79B9E72A2374B61F006EB931 /* URLConstants.swift in Sources */,
 				79503326237A6EE3005C4F8C /* TicketmasterAPI.swift in Sources */,
 				79503324237A6A24005C4F8C /* TicketmasterClient.swift in Sources */,

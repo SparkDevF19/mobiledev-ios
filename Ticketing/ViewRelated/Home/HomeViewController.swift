@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
     private let eventsLabel: UILabel = {
         let label = UILabel()
         label.text = "Events"
+        label.font = UIFont.preferredFont(for: .title3, weight: .bold)
+        label.textColor = .systemGray
         return label
     }()
     
@@ -48,6 +50,8 @@ class HomeViewController: UIViewController {
     private let upcomingLabel: UILabel = {
         let label = UILabel()
         label.text = "Upcoming"
+        label.font = UIFont.preferredFont(for: .title3, weight: .bold)
+        label.textColor = .systemGray
         return label
     }()
     
@@ -81,6 +85,8 @@ class HomeViewController: UIViewController {
     private let pastLabel: UILabel = {
         let label = UILabel()
         label.text = "Past"
+        label.font = UIFont.preferredFont(for: .title3, weight: .bold)
+        label.textColor = .systemGray
         return label
     }()
     
@@ -126,18 +132,37 @@ class HomeViewController: UIViewController {
     
     // MARK: UI Setup
     func setupUI() {
+        title = "Home"
+        
         view.addSubview(scrollView)
         
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             pastStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
             eventStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
             upcomingStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
+            upcomingStackView.widthAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.widthAnchor, multiplier: 1)
         ])
+        
+        eventStackView.setCustomSpacing(10, after: eventsLabel)
+        upcomingStackView.setCustomSpacing(10, after: upcomingLabel)
+        pastStackView.setCustomSpacing(10, after: pastLabel)
+        
+        
+        setupSearchBar()
+    }
+    
+    private func setupSearchBar() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Look for your next event"
+        searchController.searchResultsUpdater = self
+        self.definesPresentationContext = true
+        self.navigationItem.searchController = searchController
+        searchController.hidesNavigationBarDuringPresentation = false
     }
 }
 
@@ -177,7 +202,7 @@ class CustomCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.image = #imageLiteral(resourceName: "cat")
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .scaleAspectFit
+        iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         return iv
     }()
@@ -186,6 +211,7 @@ class CustomCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(bg)
+        contentView.layer.cornerRadius = 10
         NSLayoutConstraint.activate([
             bg.topAnchor.constraint(equalTo: contentView.topAnchor),
             bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -218,5 +244,15 @@ extension HomeViewController: CLLocationManagerDelegate {
             self.data = events
             self.eventCollectionView.reloadData()
         }
+    }
+}
+
+extension HomeViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+//        if let searchText = searchController.searchBar.text {
+//            filterContent(for: searchText)
+//            // Reload the table view with the search result data.
+//            tableView.reloadData()
+//        }
     }
 }
