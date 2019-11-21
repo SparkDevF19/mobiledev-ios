@@ -32,8 +32,9 @@ class HomeViewController: UIViewController {
         layout.minimumLineSpacing = 0
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
-        cv.backgroundColor = .white
+        cv.backgroundColor = .clear
         cv.isPagingEnabled = true
+        cv.showsHorizontalScrollIndicator = false
         return cv
     }()
     
@@ -56,10 +57,11 @@ class HomeViewController: UIViewController {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         //  cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
-        cv.backgroundColor = .white
+        cv.backgroundColor = .clear
         return cv
     }()
     
+
     private lazy var upcomingStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [upcomingLabel, upcomingCollectionView])
         stackView.axis = .vertical
@@ -164,7 +166,9 @@ class CustomCell: UICollectionViewCell {
         didSet {
             guard let data = data else {return}
             AF.request(data.image).responseData { responseData in
-                self.bg.image = UIImage(data: responseData.data!)
+                if let data = responseData.data {
+                    self.bg.image = UIImage(data: data)
+                }
             }
         }
     }
@@ -173,9 +177,8 @@ class CustomCell: UICollectionViewCell {
         let iv = UIImageView()
         iv.image = #imageLiteral(resourceName: "cat")
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.layer.cornerRadius = 12
         return iv
     }()
     

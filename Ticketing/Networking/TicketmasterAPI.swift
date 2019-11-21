@@ -19,9 +19,15 @@ class TicketmasterAPI {
             
             var resultEvents = [Suggested]()
             if let results = results, results.isEmpty == false {
-                if let events = results["_embedded"]["events"].array {
+                if let events = results["_embedded"]["attractions"].array {
                     for event in events {
-                        resultEvents.append(Suggested(id: event["id"].stringValue, name: event["name"].stringValue, image: event["url"].stringValue))
+                        if let images = event["images"].array {
+                            for image in images {
+                                if image["url"].stringValue.contains("RETINA_PORTRAIT_16_9") {
+                                    resultEvents.append(Suggested(id: event["id"].stringValue, name: event["name"].stringValue, image: image["url"].stringValue))
+                                }
+                            }
+                        }
                     }
                 }
             }

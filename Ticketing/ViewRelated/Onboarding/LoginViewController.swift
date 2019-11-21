@@ -18,7 +18,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
     @IBOutlet weak var googleSignInLabel: UIButton!
     @IBOutlet weak var signInLabel: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         errorLabel.alpha = 0
@@ -32,7 +31,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        
         if let error = error {
             print("error")
             return
@@ -51,9 +49,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
         }
     }
     
-    //test@test.com
-    //123456789
+    //Sign in button action
     @IBAction func signInTapped(_ sender: Any) {
+        //if statement checking that both text fields were filled in
+        if !fieldValidation(textField: emailTextField) || !fieldValidation(textField: passwordTextField){
+            print("Empty fields error")
+            self.errorLabel.text = "Fill in both fields"
+            self.errorLabel.alpha = 1
+            self.errorLabel.errorShake()
+            return
+        }
+        
+        //loginuser function call
         FirebaseAPI.shared.loginUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (error, user) in
 
             if let error = error as NSError? {
@@ -67,7 +74,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
                 return
 
             }
-                
+                //switch statement checking for specific error returned
                 switch errorCode{
                 case .invalidEmail:
                     print("invalid email")
@@ -81,23 +88,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
                     self.errorLabel.errorShake()
                 default:
                     print(error)
+                    print("invalid field")
+                    self.errorLabel.text = "Invalid field"
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.errorShake()
                 }
                 return
             }
-
+            
+            //segue to home screen if login was completed
             if let user = user {
-                //TODO: segue to home screen
                 print("success")
                 self.performSegue(withIdentifier: "homeScreenSegue", sender: self)
             }
         }
     }
     
+    //removing the error label when new textfield is touched
     func textFieldDidBeginEditing(_ textField: UITextField) {
         errorLabel.alpha = 0
     }
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //switch statement checking that each field has been filled in before changing first responder
         switch textField{
         case emailTextField:
             if(fieldValidation(textField: emailTextField)){
@@ -118,6 +132,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, GIDSignInDeleg
         }
         return true
     }
+    
+    //dismissing keyboard on background tap
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()

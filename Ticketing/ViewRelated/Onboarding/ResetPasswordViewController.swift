@@ -29,7 +29,7 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func sendTapped(_ sender: Any) {
         FirebaseAPI.shared.forgotPassword(to: emailTextField.text!) { (error) in
-            if error != nil{
+            if let error = error{
                 print("error")
                 self.errorLabel.alpha = 1
                 self.errorLabel.text = "Invalid email"
