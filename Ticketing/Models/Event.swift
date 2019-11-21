@@ -14,3 +14,11 @@ struct Suggested {
     let name: String
     let image: String
 }
+
+struct Image {
+    let ratio: String
+    let url: String
+    let width: Int
+    let height: Int
+    let fallback: Bool
+}
