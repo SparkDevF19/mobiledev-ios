@@ -11,39 +11,46 @@ import CoreLocation
 import Alamofire
 
 class HomeViewController: UIViewController {
-    
     // MARK: - Constants
     let locationManager = CLLocationManager()
     
+    // MARK: - Properties
     var data = [Suggested]()
     
     // MARK: Layouts
+    // MARK: - Events
+    private let eventsLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Events"
+        return label
+    }()
+    
     fileprivate let eventCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        //cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
         cv.backgroundColor = .white
         cv.isPagingEnabled = true
         return cv
     }()
     
-    private let eventLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Events"
-        return label
-    }()
-    
     private lazy var eventStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [eventLabel, eventCollectionView])
+        let stackView = UIStackView(arrangedSubviews: [eventsLabel, eventCollectionView])
         stackView.axis = .vertical
         return stackView
     }()
     
-    fileprivate let upcomingView: UICollectionView = {
+    // MARK: - Upcoming
+    private let upcomingLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Upcoming"
+        return label
+    }()
+    
+    fileprivate let upcomingCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -53,23 +60,17 @@ class HomeViewController: UIViewController {
         return cv
     }()
     
-    private let upcomingLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Upcoming"
-        return label
-    }()
-    
     private lazy var upcomingStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [upcomingLabel, upcomingView])
+        let stackView = UIStackView(arrangedSubviews: [upcomingLabel, upcomingCollectionView])
         stackView.axis = .vertical
         return stackView
     }()
     
-    fileprivate let pastView: UICollectionView = {
+    // MARK: - Past
+    fileprivate let pastCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        //   cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(CustomCell.self, forCellWithReuseIdentifier: "cell")
         cv.backgroundColor = .white
         return cv
@@ -78,17 +79,16 @@ class HomeViewController: UIViewController {
     private let pastLabel: UILabel = {
         let label = UILabel()
         label.text = "Past"
-        
         return label
     }()
     
     private lazy var pastStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [pastLabel, pastView])
+        let stackView = UIStackView(arrangedSubviews: [pastLabel, pastCollectionView])
         stackView.axis = .vertical
         return stackView
     }()
     
-    
+    // MARK: - StackView container
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [eventStackView, upcomingStackView, pastStackView])
         stackView.axis = .vertical
@@ -103,10 +103,9 @@ class HomeViewController: UIViewController {
         scrollView.addSubview(stackView)
         return scrollView
     }()
-    // MARK: viewDidLoad
     
+    // MARK: viewDidLoad
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         setupLocationManager()
@@ -114,122 +113,53 @@ class HomeViewController: UIViewController {
         eventCollectionView.delegate = self
         eventCollectionView.dataSource = self
         
-        upcomingView.delegate = self
-        upcomingView.dataSource = self
+        upcomingCollectionView.delegate = self
+        upcomingCollectionView.dataSource = self
         
-        pastView.delegate = self
-        pastView.dataSource = self
+        pastCollectionView.delegate = self
+        pastCollectionView.dataSource = self
         
-        view.backgroundColor = .white
-       // setup()
+        setupUI()
+    }
+    
+    // MARK: UI Setup
+    func setupUI() {
         view.addSubview(scrollView)
-        
         
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            pastStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
+            eventStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
+            upcomingStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
         ])
-        
-        NSLayoutConstraint.activate([
-        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-        stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-        stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-        
-        pastStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-        eventStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-        upcomingStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-    //    stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
-             // stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
-             // stackView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor)
-
-              //            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-              //            stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-              //            stackView.bottomAnchor.constraint(equalTo: scrollView.bott)
-          ])
-        
     }
-    
-    // MARK: collectionView Setup
-    
-    func setup(){
-//
-//        view.addSubview(eventCollectionView)
-//        view.addSubview(upcomingView)
-//        view.addSubview(pastView)
-//
-        
-        
-        // These are just constraints for the collection view
-        
-        NSLayoutConstraint.activate([
-            
-            //            eventCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            //            eventCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            //            eventCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            eventCollectionView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-            
-            
-        ])
-        
-        NSLayoutConstraint.activate([
-            
-            //            upcomingView.topAnchor.constraint(equalTo: eventCollectionView.bottomAnchor, constant: 0.3 ),
-            //            upcomingView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            //            upcomingView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            upcomingView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.4)
-            
-        ])
-        
-        NSLayoutConstraint.activate([
-            //
-            //            pastView.topAnchor.constraint(equalTo: upcomingView.bottomAnchor, constant: 0.3 ),
-            //            pastView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            //            pastView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            pastView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
-            
-            
-        ])
-        
-        
-    }
-    
 }
 
 // MARK: ViewController Delegates
-
 extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
-        
         if collectionView == eventCollectionView{
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.width/2)
         }
         return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.width/2)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCell
         cell.data = self.data[indexPath.row]
-        print("???")
         return cell
     }
-    
 }
 
 // MARK: CustomCell
-
 class CustomCell: UICollectionViewCell {
-    
     var data: Suggested? {
         didSet {
             guard let data = data else {return}
@@ -253,22 +183,20 @@ class CustomCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(bg)
-        bg.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        bg.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        
-        
+        NSLayoutConstraint.activate([
+            bg.topAnchor.constraint(equalTo: contentView.topAnchor),
+            bg.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            bg.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 extension HomeViewController: CLLocationManagerDelegate {
-    
     private func setupLocationManager() {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestWhenInUseAuthorization()
@@ -289,5 +217,3 @@ extension HomeViewController: CLLocationManagerDelegate {
         }
     }
 }
-
-
