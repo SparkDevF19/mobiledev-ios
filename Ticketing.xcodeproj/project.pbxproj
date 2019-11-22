@@ -10,7 +10,6 @@
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
 		79BA6F39233A8B40003309AC /* Tickets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Tickets.storyboard */; };
 		79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3A233A8B48003309AC /* Assets.xcassets */; };
-		79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
 		B034314423831ED800DF33BB /* TicketDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B034314223831ED800DF33BB /* TicketDetailTableViewCell.swift */; };
@@ -50,7 +49,6 @@
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79BA6F38233A8B40003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tickets.storyboard; sourceTree = "<group>"; };
 		79BA6F3A233A8B48003309AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79BA6F3D233A8B48003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79BA6F3F233A8B48003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BA6F44233A8B49003309AC /* TicketingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F48233A8B49003309AC /* TicketingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingTests.swift; sourceTree = "<group>"; };
@@ -121,14 +119,9 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
-				B0983412234F75510088D051 /* models */,
-				B00A234F234F720B00AA93E9 /* cells */,
+				7DCF085823877C09008B1DB2 /* Tickets */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
-				79BA6F37233A8B40003309AC /* Tickets.storyboard */,
-				B06D6665235F45CF00450356 /* TicketsTableViewController.swift */,
-				B0343152238442DA00DF33BB /* TicketDetailTableViewController.swift */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
-				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
 			);
 			path = Ticketing;
@@ -150,6 +143,18 @@
 				79BA6F55233A8B49003309AC /* Info.plist */,
 			);
 			path = TicketingUITests;
+			sourceTree = "<group>";
+		};
+		7DCF085823877C09008B1DB2 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				79BA6F37233A8B40003309AC /* Tickets.storyboard */,
+				B06D6665235F45CF00450356 /* TicketsTableViewController.swift */,
+				B0983412234F75510088D051 /* models */,
+				B00A234F234F720B00AA93E9 /* cells */,
+				B0343152238442DA00DF33BB /* TicketDetailTableViewController.swift */,
+			);
+			path = Tickets;
 			sourceTree = "<group>";
 		};
 		B00A234F234F720B00AA93E9 /* cells */ = {
@@ -283,7 +288,6 @@
 			files = (
 				B034314D238441D900DF33BB /* ImageTableViewCell.xib in Resources */,
 				B03431512384423D00DF33BB /* qrcodeTableViewCell.xib in Resources */,
-				79BA6F3E233A8B48003309AC /* LaunchScreen.storyboard in Resources */,
 				B06D6664235F445200450356 /* TicketTableViewCell.xib in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
 				B034314923831F8800DF33BB /* TicketVenueTableViewCell.xib in Resources */,
@@ -363,14 +367,6 @@
 				79BA6F38233A8B40003309AC /* Base */,
 			);
 			name = Tickets.storyboard;
-			sourceTree = "<group>";
-		};
-		79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79BA6F3D233A8B48003309AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
