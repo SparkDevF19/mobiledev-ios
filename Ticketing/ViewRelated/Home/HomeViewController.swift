@@ -183,6 +183,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
         cell.data = self.data[indexPath.row]
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = UIViewController()
+        detailVC.view.backgroundColor = .white
+        detailVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 // MARK: CustomCell
