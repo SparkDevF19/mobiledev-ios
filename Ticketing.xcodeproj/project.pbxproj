@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729D8A32375682400800EC2 /* FirebaseAPI.swift */; };
-		0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */; };
 		076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */; };
 		076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 076B941A236CC9AD003AE1ED /* seatMap.gif */; };
 		079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079DE3D4237DCD1F000E8C60 /* UserModel.swift */; };
@@ -18,9 +17,7 @@
 		731B2ED42368790800C7A400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED32368790800C7A400 /* HomeViewController.swift */; };
 		731B2ED92368825E00C7A400 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */; };
 		731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */; };
-		737AB59E2383154C004E438B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		737AB5A323831BFB004E438B /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A223831BFB004E438B /* Search.storyboard */; };
-		737AB5A523831C06004E438B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A423831C06004E438B /* Profile.storyboard */; };
 		737AB5A72383314A004E438B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737AB5A62383314A004E438B /* Main.storyboard */; };
 		73E2CFA3234F6CAF0015B3EC /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */; };
 		73E2CFA5234F6E840015B3EC /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */; };
@@ -37,9 +34,11 @@
 		79B9E72623744F57006EB931 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9E72523744F57006EB931 /* APIRouter.swift */; };
 		79B9E72A2374B61F006EB931 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9E7292374B61F006EB931 /* URLConstants.swift */; };
 		79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F33233A8B40003309AC /* AppDelegate.swift */; };
+		79BA6F39233A8B40003309AC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F37233A8B40003309AC /* Profile.storyboard */; };
 		79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79BA6F3A233A8B48003309AC /* Assets.xcassets */; };
 		79BA6F49233A8B49003309AC /* TicketingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F48233A8B49003309AC /* TicketingTests.swift */; };
 		79BA6F54233A8B49003309AC /* TicketingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA6F53233A8B49003309AC /* TicketingUITests.swift */; };
+		79D93A2A2387977C00FF8D3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79D93A292387977C00FF8D3B /* GoogleService-Info.plist */; };
 		7D41AA60237F9230004FD42D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D41AA5F237F9230004FD42D /* ResetPasswordViewController.swift */; };
 		7D41AA62237F94A1004FD42D /* StyleFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D41AA61237F94A1004FD42D /* StyleFields.swift */; };
 		7D41AA642380B9BA004FD42D /* absl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D41AA632380B9BA004FD42D /* absl.framework */; };
@@ -62,6 +61,7 @@
 		7D88276A237DA21F00742D60 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D882769237DA21F00742D60 /* SignUpViewController.swift */; };
 		7D88276C237DA2D700742D60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D88276B237DA2D700742D60 /* LoginViewController.swift */; };
 		DD63A82EC3F56CD79B0A5E48 /* Pods_Ticketing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766A53793BA824E22E02613B /* Pods_Ticketing.framework */; };
+		E203C63923635D6C00BB0BD6 /* ProfileCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203C63823635D6C00BB0BD6 /* ProfileCVC.swift */; };
 		EA6FBCACED8403DEEFFEA3A9 /* Pods_Ticketing_TicketingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16DAECB0D040F0A6E53EC29 /* Pods_Ticketing_TicketingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +84,6 @@
 
 /* Begin PBXFileReference section */
 		0729D8A32375682400800EC2 /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
-		0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0769FD6F2368D57B00B367EC /* instructions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions.md; sourceTree = "<group>"; };
 		076B9418236B1A3D003AE1ED /* SeatSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectViewController.swift; sourceTree = "<group>"; };
 		076B941A236CC9AD003AE1ED /* seatMap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = seatMap.gif; sourceTree = "<group>"; };
@@ -96,7 +95,6 @@
 		731B2ED72368825E00C7A400 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeCollectionViewCell.swift; path = Data/HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		731B2ED82368825E00C7A400 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeCollectionViewCell.xib; path = Data/HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		737AB5A223831BFB004E438B /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		737AB5A423831C06004E438B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		737AB5A62383314A004E438B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		73E2CFA2234F6CAF0015B3EC /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		73E2CFA4234F6E840015B3EC /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +113,7 @@
 		79B9E7292374B61F006EB931 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		79BA6F30233A8B40003309AC /* Ticketing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F33233A8B40003309AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79BA6F38233A8B40003309AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		79BA6F3A233A8B48003309AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79BA6F3F233A8B48003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79BA6F44233A8B49003309AC /* TicketingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +122,7 @@
 		79BA6F4F233A8B49003309AC /* TicketingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BA6F53233A8B49003309AC /* TicketingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketingUITests.swift; sourceTree = "<group>"; };
 		79BA6F55233A8B49003309AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D93A292387977C00FF8D3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A7058A6C0A11327EDE5AC0A /* Pods-Ticketing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.release.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.release.xcconfig"; sourceTree = "<group>"; };
 		7D41AA5F237F9230004FD42D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		7D41AA61237F94A1004FD42D /* StyleFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleFields.swift; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 		83E5BDF583A850D15928C5F8 /* Pods-Ticketing-TicketingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		90071BA788DADF87234021C0 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing-TicketingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing-TicketingUITests/Pods-Ticketing-TicketingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		92F1B17BBD9F8D0B014CA2DB /* Pods-TicketingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketingTests.release.xcconfig"; path = "Target Support Files/Pods-TicketingTests/Pods-TicketingTests.release.xcconfig"; sourceTree = "<group>"; };
+		E203C63823635D6C00BB0BD6 /* ProfileCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCVC.swift; sourceTree = "<group>"; };
 		F16DAECB0D040F0A6E53EC29 /* Pods_Ticketing_TicketingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticketing_TicketingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF6D2FA1EE248EBBDF2C2F /* Pods-Ticketing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticketing.debug.xcconfig"; path = "Target Support Files/Pods-Ticketing/Pods-Ticketing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,7 +214,7 @@
 		0769FD6C2368D4B000B367EC /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				0769FD6D2368D4C600B367EC /* GoogleService-Info.plist */,
+				79D93A292387977C00FF8D3B /* GoogleService-Info.plist */,
 				0769FD6F2368D57B00B367EC /* instructions.md */,
 			);
 			path = Firebase;
@@ -254,9 +255,9 @@
 		737AB5A123831BE2004E438B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				79BA6F37233A8B40003309AC /* Profile.storyboard */,
 				794876EB2386087C00496ED0 /* Favorites.storyboard */,
 				737AB5A223831BFB004E438B /* Search.storyboard */,
-				737AB5A423831C06004E438B /* Profile.storyboard */,
 				737AB5A62383314A004E438B /* Main.storyboard */,
 				794876E92386001900496ED0 /* Home.storyboard */,
 				794876ED23860A4700496ED0 /* Tickets.storyboard */,
@@ -334,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				794876E62385F07200496ED0 /* ViewRelated */,
+				79D93A2723877A3800FF8D3B /* Profile */,
 				0729D8A02375609000800EC2 /* Models */,
 				79B9E72423744F28006EB931 /* Networking */,
 				0769FD6C2368D4B000B367EC /* Firebase */,
@@ -360,6 +362,14 @@
 				79BA6F55233A8B49003309AC /* Info.plist */,
 			);
 			path = TicketingUITests;
+			sourceTree = "<group>";
+		};
+		79D93A2723877A3800FF8D3B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E203C63823635D6C00BB0BD6 /* ProfileCVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7D8B9FEF237F84CA000186F9 /* Onboarding */ = {
@@ -470,7 +480,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Cassandra Zuria";
 				TargetAttributes = {
 					79BA6F2F233A8B40003309AC = {
@@ -512,17 +522,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				794876EE23860A4700496ED0 /* Tickets.storyboard in Resources */,
-				737AB5A523831C06004E438B /* Profile.storyboard in Resources */,
 				794876EA2386001900496ED0 /* Home.storyboard in Resources */,
 				737AB5A72383314A004E438B /* Main.storyboard in Resources */,
 				076B941B236CC9AD003AE1ED /* seatMap.gif in Resources */,
-				0769FD6E2368D4C600B367EC /* GoogleService-Info.plist in Resources */,
 				737AB5A323831BFB004E438B /* Search.storyboard in Resources */,
-				737AB59E2383154C004E438B /* (null) in Resources */,
 				794876EC2386087C00496ED0 /* Favorites.storyboard in Resources */,
 				79BA6F3B233A8B48003309AC /* Assets.xcassets in Resources */,
 				794876E82385FC5F00496ED0 /* FavoritesTableViewCell.xib in Resources */,
+				79D93A2A2387977C00FF8D3B /* GoogleService-Info.plist in Resources */,
 				731B2EDA2368825E00C7A400 /* HomeCollectionViewCell.xib in Resources */,
+				79BA6F39233A8B40003309AC /* Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +702,9 @@
 				7D41AA62237F94A1004FD42D /* StyleFields.swift in Sources */,
 				79BA6F34233A8B40003309AC /* AppDelegate.swift in Sources */,
 				07CDA4DD23806421004B2798 /* EventModel.swift in Sources */,
+				E203C63923635D6C00BB0BD6 /* ProfileCVC.swift in Sources */,
+				076B9419236B1A3D003AE1ED /* SeatSelectViewController.swift in Sources */,
+				07DD38B3237DE08C005A6F72 /* CreditCardModel.swift in Sources */,
 				079DE3D5237DCD1F000E8C60 /* UserModel.swift in Sources */,
 				0729D8A42375682400800EC2 /* FirebaseAPI.swift in Sources */,
 				7D41AA60237F9230004FD42D /* ResetPasswordViewController.swift in Sources */,
@@ -741,6 +753,17 @@
 			targetProxy = 79BA6F50233A8B49003309AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79BA6F37233A8B40003309AC /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79BA6F38233A8B40003309AC /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		79BA6F56233A8B49003309AC /* Debug */ = {
@@ -864,6 +887,7 @@
 			baseConfigurationReference = FAEF6D2FA1EE248EBBDF2C2F /* Pods-Ticketing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ticketing/Info.plist;
@@ -873,6 +897,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.Ticketing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -883,6 +908,7 @@
 			baseConfigurationReference = 7A7058A6C0A11327EDE5AC0A /* Pods-Ticketing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ticketing/Info.plist;
@@ -892,6 +918,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.Ticketing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -903,8 +930,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TicketingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -913,6 +942,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.TicketingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ticketing.app/Ticketing";
@@ -925,8 +956,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TicketingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -935,6 +968,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.TicketingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ticketing.app/Ticketing";
@@ -946,8 +981,10 @@
 			baseConfigurationReference = 90071BA788DADF87234021C0 /* Pods-Ticketing-TicketingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TicketingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,6 +993,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.TicketingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Ticketing;
@@ -967,8 +1006,10 @@
 			baseConfigurationReference = 83E5BDF583A850D15928C5F8 /* Pods-Ticketing-TicketingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BWPXZ945C9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TicketingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -977,6 +1018,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SparkDev.TicketingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Ticketing;
