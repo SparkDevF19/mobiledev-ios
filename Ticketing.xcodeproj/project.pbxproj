@@ -168,10 +168,10 @@
 		79BA6F32233A8B40003309AC /* Ticketing */ = {
 			isa = PBXGroup;
 			children = (
+				79D93A2823877A6900FF8D3B /* Storyboards */,
+				79D93A2723877A3800FF8D3B /* Profile */,
 				0729D8A02375609000800EC2 /* Models */,
 				79BA6F33233A8B40003309AC /* AppDelegate.swift */,
-				E203C63823635D6C00BB0BD6 /* ProfileCVC.swift */,
-				79BA6F37233A8B40003309AC /* Profile.storyboard */,
 				79BA6F3A233A8B48003309AC /* Assets.xcassets */,
 				79BA6F3C233A8B48003309AC /* LaunchScreen.storyboard */,
 				79BA6F3F233A8B48003309AC /* Info.plist */,
@@ -197,6 +197,22 @@
 				79BA6F55233A8B49003309AC /* Info.plist */,
 			);
 			path = TicketingUITests;
+			sourceTree = "<group>";
+		};
+		79D93A2723877A3800FF8D3B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E203C63823635D6C00BB0BD6 /* ProfileCVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		79D93A2823877A6900FF8D3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				79BA6F37233A8B40003309AC /* Profile.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8445B2A737C37550212179D5 /* Frameworks */ = {
