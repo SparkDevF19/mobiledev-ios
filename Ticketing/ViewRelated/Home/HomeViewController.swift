@@ -142,9 +142,9 @@ class HomeViewController: UIViewController {
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            pastStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-            eventStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
-            upcomingStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.3),
+            pastStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.25),
+            eventStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.4),
+            upcomingStackView.heightAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.heightAnchor, multiplier: 0.25),
             upcomingStackView.widthAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.widthAnchor, multiplier: 1)
         ])
         
@@ -200,7 +200,6 @@ class CustomCell: UICollectionViewCell {
     
     fileprivate let bg: UIImageView = {
         let iv = UIImageView()
-        iv.image = #imageLiteral(resourceName: "cat")
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
