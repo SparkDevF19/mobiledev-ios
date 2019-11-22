@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="qrcodeTableViewCell" rowHeight="186" id="KGk-i7-Jjw" customClass="qrcodeTableViewCell" customModule="Ticketing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="185.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-Br-UYm">
+                        <rect key="frame" x="20" y="20" width="174" height="145.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yqZ-Br-UYm" secondAttribute="height" multiplier="1:1" id="Q52-CW-eyD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yqZ-Br-UYm" secondAttribute="bottom" constant="20" id="4y5-zX-wrh"/>
+                    <constraint firstItem="yqZ-Br-UYm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Rcq-WR-9E7"/>
+                    <constraint firstAttribute="trailing" secondItem="yqZ-Br-UYm" secondAttribute="trailing" constant="20" id="cXP-4G-cJ7"/>
+                    <constraint firstItem="yqZ-Br-UYm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sAm-8g-xnY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-28.985507246376812" y="83.035714285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
