@@ -72,3 +72,6 @@ fastlane/test_output
 
 # Files containing api keys or passwords should not be commited, these include google.plist or api key constants
 GoogleService-Info.plist
+Ticketing/.DS_Store
+
+AppSecrets.swift

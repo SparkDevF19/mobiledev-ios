@@ -15,7 +15,8 @@ class FirebaseAPI {
     
     static let shared = FirebaseAPI()
     
-    let userCollection = "user"
+    let userCollection = "users"
+    let eventCollection = "events"
     
     private let database = Firestore.firestore()
     
@@ -105,7 +106,7 @@ class FirebaseAPI {
         }
     }
     
-    // Links Anonymous account with new registered email, will return error if email already in use
+    //Links Anonymous account with new registered email, will return error if email already in use
     public func registerUser(email: String, password: String, completion: @escaping(Error?,User?)-> Void){
         
         let credential = EmailAuthProvider.credential(withEmail: email, password: password)
@@ -231,8 +232,89 @@ class FirebaseAPI {
         }
     }
     
+    // MARK: - Get Event
+    private func getMockaroo(min: Int,max:Int, completion: @escaping(Error?, Event?)->Void) {
+        guard let url = URL(string: "https://my.api.mockaroo.com/eventseating.json?key=7b35a740&min=\(min)&max=\(max)")
+        else {
+            completion(FirebaseAPIError.invalidURL, nil)
+            return
+        }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                completion(error, nil)
+                return
+            }
+            
+            
+            if let response = response as? HTTPURLResponse, !(200...299 ~= response.statusCode) {
+                completion(FirebaseAPIError.unsuccesfulStatusCode, nil)
+                return
+            }
+            
+            if let data = data {
+                do {
+                    let event = try JSONDecoder().decode(Event.self, from: data)
+                    completion(nil, event)
+                } catch {
+                    completion(FirebaseAPIError.decodableError, nil)
+                }
+            }
+        }.resume()
+        
+    }
+    
+    private func addMockarooToServer(event: Event, completion: @escaping(Error?)->Void){
+        if let eventID = event.eventID {
+                let data = try! Firestore.Encoder().encode(event)
+                database.collection(eventCollection).document(eventID).setData(data, merge: true,completion: completion)
+            } else {
+                completion(FirebaseAPIError.noEventID)
+            }
+    }
+    
+    func getEvent(eventID: String, completion: @escaping(Error?,Event?)->Void) {
+        if isLoggedIn() {
+            database.collection(eventCollection).document(eventID).getDocument { (snapshot, error) in
+                if let error = error {
+                    completion(error,nil)
+                    return
+                }
+                
+                if let snapshot = snapshot, snapshot.exists {
+                    let event = try! snapshot.data(as: Event.self)
+                    event?.eventID = snapshot.documentID
+                    completion(nil,event)
+                } else {
+                    self.getMockaroo(min: 10, max: 100) { (error, event) in
+                        if let error = error {
+                            completion(error,nil)
+                        }
+                        
+                        if let event = event {
+                            event.eventID = eventID
+                            self.addMockarooToServer(event: event) { (error) in
+                                if let error = error {
+                                    completion(error, nil)
+                                } else {
+                                    completion(nil,event)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } else {
+            completion(FirebaseAPIError.noUID, nil)
+        }
+    }
+    
+    
 }
 
 enum FirebaseAPIError: Error {
     case noUID
+    case unsuccesfulStatusCode
+    case invalidURL
+    case decodableError
+    case noEventID
 }

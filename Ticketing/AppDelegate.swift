@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +22,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
         
+        UINavigationBar.appearance().prefersLargeTitles = true
         
+//        FirebaseAPI.shared.loginAnonymously { (Error, User) in
+//            if Error != nil {
+//                print(Error!)
+//            }
+//            print("user signed in anonymously")
+//        }
+//
+//        FirebaseAPI.shared.loginUser(withEmail: "keljqwle", password: "jkqwhekjqw") { (error, user) in
+//            if let error = error {
+//                print(error)
+//            }
+//
+//            if let user = user {
+//
+//            }
+//        }
+//
         return true
     }
     
